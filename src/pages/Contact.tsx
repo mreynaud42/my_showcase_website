@@ -1,4 +1,4 @@
 
 export default function Contact() {
-    return <h1>Contact</h1>
+    return <div className="head"><h1 className="namepage">Contact</h1></div>
 }

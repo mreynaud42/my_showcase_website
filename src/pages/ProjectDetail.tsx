@@ -1,4 +1,4 @@
 
 export default function ProjectDetail() {
-    return <h1>Project Detail</h1>
+    return <div className="head"><h1 className="namepage">Project Detail</h1></div>
 }
