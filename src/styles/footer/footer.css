@@ -1,0 +1,49 @@
+
+footer {
+    width: 100%;
+    padding: 2% 0 1%;
+    border-radius: 50px 50px 0 0;
+
+    background-color: var(--secondary-color);
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+footer > nav {
+    height: 100%;
+    margin: 0 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+
+
+p {
+    color: white;
+    font-size: 1rem;
+}
+
+h2, svg {
+    color: var(--primary-color);
+    font-weight: 900;
+}
+
+a {
+    height: 100%;
+    display: inline-block;
+}
+
+svg {
+    height: 100%;
+    width: auto;
+}
+
+@keyframes marquee {
+    0%   { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}

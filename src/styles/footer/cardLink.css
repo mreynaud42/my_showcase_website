@@ -1,0 +1,28 @@
+
+a.card-link:hover {
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+a.card-link:hover div.card-link-top {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+div.card-link-top {
+    padding: 20px;
+    border-radius: 25px;
+}
+
+div.card-link-bottom {
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    opacity: 0;
+}
+
+footer > nav > a:hover div.card-link-bottom {
+    opacity: 100%
+}

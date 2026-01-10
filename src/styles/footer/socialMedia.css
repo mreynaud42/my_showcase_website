@@ -1,0 +1,34 @@
+
+div.social_media {
+    display: flex;
+    flex-direction: row;
+}
+
+div.social_media > div {
+    width: 100%;
+}
+
+div.social_media a {
+    width: min-content;
+    margin: auto;
+    padding: 25px 50px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+div.social_media a:hover {
+    border-radius: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+div.social_media svg {
+    height: 50px;
+}
+
+div.social_media h2 {
+    font-weight: 900;
+    font-size: 2rem;
+}

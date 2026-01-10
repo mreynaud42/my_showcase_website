@@ -1,0 +1,29 @@
+
+.marquee {
+    width: 100%;
+    height: 10vh;
+    min-height: 50px;
+    max-height: 75px;
+    margin: 10px 0;
+
+    display: flex;
+
+    overflow: hidden;
+}
+
+.marquee > div {
+    width: 100%;
+    height: 100%;
+
+    flex: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    animation: marquee 20s linear infinite;
+}
+
+.marquee > div > span {
+    height: 100%;
+}
