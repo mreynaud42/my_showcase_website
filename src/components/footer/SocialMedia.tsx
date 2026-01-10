@@ -12,21 +12,25 @@ type MediaType = {
 }
 
 function Media({ href, nameMedia, children }: MediaType) {
-    return <div>
-        <a href={href}  target="_blank">
-            {children}
-            <h2>{nameMedia}</h2>
-        </a>
-    </div>
+    return (
+        <div>
+            <a href={href}  target="_blank">
+                {children}
+                <h2>{nameMedia}</h2>
+            </a>
+        </div>
+    );
 }
 
 export default function SocialMedia() {
-    return <div className="social_media">
-        <Media href="https://linkedin.com/in/mathis-reynaud" nameMedia="LinkedIn">
-            <LogoLinkedin />
-        </Media>
-        <Media href="https://github.com/mreynaud42" nameMedia="GitHub">
-            <LogoGit />
-        </Media>
-    </div>
+    return (
+        <div className="social_media">
+            <Media href="https://linkedin.com/in/mathis-reynaud" nameMedia="LinkedIn">
+                <LogoLinkedin />
+            </Media>
+            <Media href="https://github.com/mreynaud42" nameMedia="GitHub">
+                <LogoGit />
+            </Media>
+        </div>
+    );
 }

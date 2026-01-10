@@ -10,13 +10,15 @@ type CardLinkType = {
 }
 
 export default function CardLink({ href, title, children, cta = "See page"}: CardLinkType) {
-    return <a href={href} className="card-link">
-        <div className="card-link-top">
-            <h2>{title}</h2>
-            {children}
-        </div>
-        <div className="card-link-bottom">
-            <p>{cta}</p>
-        </div>
-    </a>
+    return (
+        <a href={href} className="card-link">
+            <div className="card-link-top">
+                <h2>{title}</h2>
+                {children}
+            </div>
+            <div className="card-link-bottom">
+                <p>{cta}</p>
+            </div>
+        </a>
+    );
 }
