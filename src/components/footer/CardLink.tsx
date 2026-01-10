@@ -9,7 +9,7 @@ type CardLinkType = {
     cta?: string;
 }
 
-export default function CardLink({ href, title, children, cta = "See page"}: CardLinkType) {
+export default function CardLink({ href, title, children, cta = "See page" }: CardLinkType) {
     return (
         <a href={href} className="card-link">
             <div className="card-link-top">

@@ -10,7 +10,7 @@ export default function LogoLinkedin() {
                 </mask>
             </defs>
         </svg>
-    )
+    );
 }
 
 
