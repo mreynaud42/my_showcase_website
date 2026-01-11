@@ -42,6 +42,16 @@ h1.namepage {
     text-align: center;
 }
 
+a, button, p, h1, h2, h3, h4, h5, h6 {
+    position: relative;
+    z-index: 1;
+}
+
+:is(a, button, p, h1, h2, h3, h4, h5, h6) * {
+    position: relative;
+    z-index: 1;
+}
+
 a, a:visited {
   text-decoration: none;
 }
