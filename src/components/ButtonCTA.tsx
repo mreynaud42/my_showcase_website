@@ -10,12 +10,12 @@ type ButtonCtaType = {
 export default function ButtonCTA({ href, cta }: ButtonCtaType) {
     return (
         <a href={href} className="button-cta">
-            <div>
-                <p className="text-cta">{cta}</p>
-            </div>
             <span>
                 <Arrow />
             </span>
+            <div>
+                <p className="text-cta">{cta}</p>
+            </div>
         </a>
     );
 }

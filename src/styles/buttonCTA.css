@@ -1,62 +1,77 @@
-a.button-cta {
-    border-radius: 50px;
-
-    background-color: var(--secondary-color);
-    /* box-shadow: 0 2px black; */
-    
-    display: flex;
-    align-items: center;
-}
-
-a.button-cta:hover {
-    filter: brightness(1.15);
-}
-
-a.button-cta:active {
-    /* background-color: aliceblue; */
-    /* box-shadow: 0 0; */
-    transform: translateY(2px);
-}
-
-
-div.me div.button {
-    
+div.me div.button {    
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-div.button a {
+a.button-cta {
     width: 30%;
-}
+    min-width: 150px;
 
-div.button a div {
-    width: calc(100% - 50px);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-div.button p.text-cta {
-    margin: 0;
-    color: var(--primary-color);
-}
-
-div.button span {
     height: 50px;
-    width: 50px;
-    padding: 5px 3px 5px 7px;
-    border-radius: 50%;
-    border: 1px;
+    border-radius: 50px;
+
+    background-color: var(--secondary-color);
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    position: relative;
+    overflow: hidden;
+}
+
+a.button-cta:active {
+    transform: translateY(2px);
+}
+
+a.button-cta span {
+    height: 100%;
+    width: 100%;
+    padding: 5px 15px;
+    border-radius: 50px;
     
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: var(--dark-secondary-color);
     
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    position: absolute;
+
+    transform: translateX(calc(-100% + 50px));
+    transition: transform 0.5s ease;
+}
+
+a.button-cta:hover span {
+    transform: translateX(max(0%, calc(150px - 100%)));
+    transition: transform 0.5s ease;
+}
+
+a.button-cta span svg{
+    height: 30px;
+}
+
+a.button-cta div {
+    width: 100%;
+    margin: 0 50px;
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-div.button span svg{
-    height: 30px;
+a.button-cta p.text-cta {
+    width: 100%;
+    max-height: 3em;
+    line-height: 1.5;
+    margin: 0;
+
+    color: var(--primary-color);
+
+    overflow: hidden;
+    word-break: break-word;
+
+    text-align: center;
+    z-index: 1;
 }
