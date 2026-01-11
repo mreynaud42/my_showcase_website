@@ -1,5 +1,5 @@
 import LogoLinkedin from "../logo/Linkedin"
-import LogoGit from "../logo/Git"
+import LogoGitHub from "../logo/Git"
 
 import type { ReactNode } from "react";
 
@@ -29,7 +29,7 @@ export default function SocialMedia() {
                 <LogoLinkedin />
             </Media>
             <Media href="https://github.com/mreynaud42" nameMedia="GitHub">
-                <LogoGit />
+                <LogoGitHub />
             </Media>
         </div>
     );
