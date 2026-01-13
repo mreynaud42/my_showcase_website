@@ -1,5 +1,5 @@
 
-div.me {
+section {
     width: 50%;
     border-radius: 50px 0;
     padding: 2%;
@@ -7,12 +7,16 @@ div.me {
     background-color: rgba(255, 255, 255, 0.6);
 }
 
-div.me h2 {
+section h2 {
     color: black;
 }
 
-div.me p {
+section p {
     margin: 1rem 0;
 
     color: black;
+}
+
+div.slider {
+    margin-bottom: 1rem;
 }
