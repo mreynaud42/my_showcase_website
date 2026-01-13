@@ -1,0 +1,109 @@
+
+div.slider {
+    width: 100%;
+    
+    position: relative;
+    overflow: hidden;
+    
+    touch-action: pan-y;
+
+    user-select: none;
+
+    --height-card: 300px;
+}
+
+div.slider-cards {
+    width: 100%;
+
+    position: relative;
+
+    display: flex;
+
+    transition: transform 0.5s ease;
+}
+
+div.card {
+    width: 100%;
+    height: var(--height-card);
+    background: #8C8;
+    counter-increment: gallery-cell;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.card p {
+    height: min-content;
+    margin: 0;
+}
+
+ol.dots-cards {
+    width: 100%;
+    margin: 10px 0 15px 0;
+
+    text-align: center;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+li.dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 8px;
+    background: var(--secondary-color);
+    border-radius: 50%;
+    opacity: 0.25;
+    cursor: pointer;
+}
+
+li.is-selected {
+    opacity: 1;
+}
+
+div.slider button {
+    --size-button: 50px;
+    width: var(--size-button);
+    height: var(--size-button);
+
+    border: var(--secondary-color) 1px solid;
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.6);
+
+    position: absolute;
+
+    top: calc(var(--height-card) * 0.5 - var(--size-button) * 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+div.slider button.left {
+    left: 2px;
+
+    padding-right: 3px;
+}
+
+div.slider button.left svg{
+    rotate: 180deg;
+}
+
+div.slider button.right {
+    right: 2px;
+
+    padding-left: 3px;
+}
+
+div.slider button svg {
+    height: 30px;
+    color: var(--secondary-color);
+}
