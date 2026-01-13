@@ -88,7 +88,7 @@ div.slider button {
 }
 
 div.slider button.left {
-    left: 2px;
+    left: 5px;
 
     padding-right: 3px;
 }
@@ -98,7 +98,7 @@ div.slider button.left svg{
 }
 
 div.slider button.right {
-    right: 2px;
+    right: 5px;
 
     padding-left: 3px;
 }

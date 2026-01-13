@@ -3,11 +3,6 @@ import Arrow from "./icon/arrow"
 
 import "../styles/sliderCards.css";
 
-// type ButtonCtaType = {
-//     href: string;
-//     cta: string;
-// }
-
 export default function SliderCards() {
     const [currentIndex, setCurrentIndex] = useState<number>(0);
     
