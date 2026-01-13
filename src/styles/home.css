@@ -1,27 +1,38 @@
 
-section.info {
+div.info {
     width: 75%;
 
     display: flex;
     gap: 2%;
 }
 
-section.info > div {
-    border-radius: 0 50px;
-    padding: 2%;
-
-    background-color: rgba(255, 255, 255, 0.6);
-}
-
-section.projects {
-    width: 75%;
+section {
     border-radius: 0 50px ;
     padding: 2%;
 
     background-color: rgba(255, 255, 255, 0.6);
 }
 
+div.info > section {
+    width: 50%;
+    border-radius: 0 50px;
+    padding: 2%;
+
+    
+    display: flex;
+    flex-direction: column;
+}
+
+div.info div.button {
+    margin-top: auto;
+}
+
+section.projects {
+    width: 75%;
+}
+
 section h2 {
+    margin-bottom: 1rem;
     color: black;
 }
 

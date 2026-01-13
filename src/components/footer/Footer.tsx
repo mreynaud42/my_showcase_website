@@ -10,16 +10,16 @@ export default function Footer() {
             <SocialMedia />
             <nav>
                 <CardLink href="/" title="Home">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et enim eget diam facilisis molestie. Morbi facilisis dictum risus sed iaculis. Morbi rutrum maximus maximus.</p>
+                    <p>A space dedicated to showcasing my skills, experience, and IT projects.</p>
                 </CardLink>
-                <CardLink href="/about" title="About">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et enim eget diam facilisis molestie. Morbi facilisis dictum risus sed iaculis. Morbi rutrum maximus maximus.</p>
+                <CardLink href="/about" title="About" cta="About me">
+                    <p>As a developer passionate about IT and modern technologies, I present my career path here.</p>
                 </CardLink>
-                <CardLink href="/projects" title="Projects">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et enim eget diam facilisis molestie. Morbi facilisis dictum risus sed iaculis. Morbi rutrum maximus maximus.</p>
+                <CardLink href="/projects" title="Projects" cta="See my projects">
+                    <p>A selection of personal and professional projects highlighting my technical skills, working methods, and approach to IT development.</p>
                 </CardLink>
                 <CardLink href="/contact" title="Contact" cta="Contact me">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et enim eget diam facilisis molestie. Morbi facilisis dictum risus sed iaculis. Morbi rutrum maximus maximus.</p>
+                    <p>Have a question or a <strong>professional opportunity</strong>? Feel free to contact me to discuss or learn more about my profile.</p>
                 </CardLink>
             </nav>
             <Marquee />
