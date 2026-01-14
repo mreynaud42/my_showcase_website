@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 import LogoLinkedin from "../logo/Linkedin"
 import LogoGitHub from "../logo/Git"
 
-import "../../styles/footer/socialMedia.css";
+import "../../styles/components/footer/socialMedia.css";
 
 type MediaType = {
     href: string;

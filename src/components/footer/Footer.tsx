@@ -2,7 +2,7 @@ import Marquee from "./Marquee"
 import CardLink from "./CardLink"
 import SocialMedia from "./SocialMedia"
 
-import "../../styles/footer/footer.css";
+import "../../styles/components/footer/footer.css";
 
 export default function Footer() {
     return (

@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import Arrow from "./icon/arrow"
 
-import "../styles/sliderCards.css";
+import "../styles/components/sliderCards.css";
 
 export default function SliderCards() {
     const [currentIndex, setCurrentIndex] = useState<number>(0);

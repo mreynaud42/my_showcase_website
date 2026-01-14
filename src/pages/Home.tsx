@@ -1,7 +1,7 @@
 import ButtonCTA from "../components/ButtonCTA"
 import SliderCards from "../components/SliderCards"
 
-import "../styles/home.css";
+import "../styles/pages/home.css";
 
 export default function Home() {
     return (

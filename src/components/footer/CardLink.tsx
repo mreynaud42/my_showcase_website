@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-import "../../styles/footer/cardLink.css";
+import "../../styles/components/footer/cardLink.css";
 
 type CardLinkType = {
     href: string;

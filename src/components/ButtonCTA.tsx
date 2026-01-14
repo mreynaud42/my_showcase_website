@@ -1,6 +1,6 @@
 import Arrow from "./icon/arrow"
 
-import "../styles/buttonCTA.css";
+import "../styles/components/buttonCTA.css";
 
 type ButtonCtaType = {
     href: string;

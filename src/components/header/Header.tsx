@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import MenuDiv from "../MenuDiv"
 
-import "../../styles/header/header.css";
+import "../../styles/components/header/header.css";
 
 export default function Header() {
     const [isCheck, setIsCheck] = useState(false);

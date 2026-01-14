@@ -1,7 +1,7 @@
 import LogoMathisReynaud from "../logo/MathisReynaud"
 import LogoMreynaud from "../logo/Mreynaud"
 
-import "../../styles/footer/marquee.css";
+import "../../styles/components/footer/marquee.css";
 
 function ElementMarquee() {
     return (

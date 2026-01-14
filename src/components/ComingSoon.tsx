@@ -1,4 +1,4 @@
-import "../styles/comingSoon.css";
+import "../styles/components/comingSoon.css";
 
 export default function ComingSoon() {
     return (
