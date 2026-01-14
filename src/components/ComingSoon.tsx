@@ -1,4 +1,3 @@
-
 import "../styles/comingSoon.css";
 
 export default function ComingSoon() {

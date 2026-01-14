@@ -10,7 +10,7 @@ type MenuDivType = {
 export default function MenuDiv({ className }: MenuDivType) {
     return (
         <div className={`fullscreen-menu ${className}`} >
-            <div className="logo"><a href="/"><Mreynaud/></a></div>
+            <div className="logo"><Mreynaud/></div>
             <nav className="nav-menu">
                 <ul>
                     <li>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import Arrow from "./icon/arrow"
 
 import "../styles/sliderCards.css";

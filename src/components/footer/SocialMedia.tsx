@@ -1,7 +1,7 @@
+import type { ReactNode } from "react";
+
 import LogoLinkedin from "../logo/Linkedin"
 import LogoGitHub from "../logo/Git"
-
-import type { ReactNode } from "react";
 
 import "../../styles/footer/socialMedia.css";
 
