@@ -18,11 +18,11 @@ div.fullscreen-menu.check {
 }
 
 div.fullscreen-menu > * {
-    width: 50%;
+    width: 50vw;
 }
 
 div.logo {
-    padding: 5%;
+    padding: 5vh 5vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +39,7 @@ div.logo svg{
 
 .nav-menu {
     margin: calc(75px + 1rem) 1rem 1rem 1rem;
-    padding: 5rem 1rem 1rem 1rem;
+    padding: 10vh 1rem 1rem 1rem;
     border-radius: 10px;
 
     background-color: var(--dark-secondary-color);

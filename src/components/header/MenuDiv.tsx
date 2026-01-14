@@ -1,7 +1,7 @@
-import Mreynaud from "./logo/Mreynaud"
-import SocialMedia from "./footer/SocialMedia"
+import Mreynaud from "../logo/Mreynaud"
+import SocialMedia from "../footer/SocialMedia"
 
-import "../styles/components/menuDiv.css";
+import "../../styles/components/menuDiv.css";
 
 type MenuDivType = {
     className: string;

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import MenuDiv from "../MenuDiv"
+import MenuDiv from "./MenuDiv"
 
 import "../../styles/components/header/header.css";
 
