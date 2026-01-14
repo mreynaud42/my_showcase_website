@@ -6,7 +6,7 @@ export default function Contact() {
     return (
         <>
             <div className="head"><h1 className="namepage">Contact</h1></div>
-            <section>
+            <section className="contact">
                 <h2>Contact me</h2>
                 <p>I would be delighted to hear from you. Whether you have questions, <strong>an internship opportunity</strong>, or a potential collaboration, please feel free to contact me by email. I will respond as soon as possible.</p>
                 <div className="info-contact">
