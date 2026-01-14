@@ -1,26 +1,48 @@
 
 section.project {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 40%;
+    grid-template-rows: auto; 
+    grid-template-areas:
+        "text img"
+        "footer footer";
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem; 
+}
+
+section.project:not(:has(.project-img)) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "text"
+        "footer";
 }
 
 section.project div.project-img {
-   flex: 0 0 33%;
-   background-color:aqua;
+   grid-area: img;
 }
 
 section.project div.project-img img {
-    height: 100%;
+    position: sticky;
+    top: 0;
+
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+
+    display: block;
 }
 
 section.project div.project-text {
-    flex: 1 0 66%;
-
+    grid-area: text;
+    
     display: flex;
     flex-direction: column;
     gap: 2rem;
+}
+
+section.project div.project-description {
+    position: sticky;
+    top: 0;
 }
 
 section.project div.project-description h2 {
@@ -32,13 +54,35 @@ section.project div.project-description p {
 }
 
 section.project div.footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    grid-area: footer;
+
+    display: grid;
+    grid-template-columns: 1fr 40%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "button button"
+        "language link";
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
 }
 
-section.project div.footer > div {
-    max-width: 80%;
+section.project div.footer div.button {
+    grid-area: button;
+}
+
+section.project div.footer div.button svg{
+    color: var(--primary-color);;
+}
+
+section.project div.footer div.link {
+    grid-area: link;
+
+    text-align: right;
+}
+
+section.project div.footer div.language-use {
+    grid-area: language;
+    
     display: flex;
     align-items: baseline;
 }

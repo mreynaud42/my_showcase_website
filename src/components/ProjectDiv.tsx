@@ -26,24 +26,26 @@ export default function ProjectDiv({ project }: ProjectDivProps) {
                         <p key={index}>{projectP}</p>
                     ))}
                 </div>
-                <div className="button">
-                    <ButtonCTA href={project.href} cta="See my project"/>
-                </div>
-                <div className="footer">
-                    <div>
-                        <p>Language use:</p>
-                        <div className="languages">
-                            {project.languageUse.map((language, index) => (
-                                <span key={index}>{language}</span>
-                            ))}
-                        </div>
-                    </div>
-                    <a href={project.hrefGithub}>Project GitHub</a>
-                </div>
             </div>
             {project.img && (
                 <div className="project-img"><img src={project.img} alt={`project project${project.id}`} /></div>
             )}
+            <div className="footer">
+                <div className="button">
+                    <ButtonCTA href={project.href} cta="See my project"/>
+                </div>
+                <div className="language-use">
+                    <p>Language use:</p>
+                    <div className="languages">
+                        {project.languageUse.map((language, index) => (
+                            <span key={index}>{language}</span>
+                        ))}
+                    </div>
+                </div>
+                <div className="link">
+                    <a href={project.hrefGithub}>Link GitHub</a>
+                </div>
+            </div>
         </section>
     );
 }
