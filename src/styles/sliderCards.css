@@ -25,8 +25,7 @@ div.slider-cards {
 div.card {
     width: 100%;
     height: var(--height-card);
-    background: #8C8;
-    counter-increment: gallery-cell;
+    background-color: yellowgreen;
 
     flex-shrink: 0;
 

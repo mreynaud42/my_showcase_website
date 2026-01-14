@@ -11,14 +11,25 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    z-index: 10;
 }
 
-header > div {
+header > div.top-bar, header label {
     height: 100%;
 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+label.menu-button {
+    cursor: pointer;
+    z-index: 20;
 }
 
 a {
@@ -28,4 +39,5 @@ a {
 
 img {
     height: 100%;
+    max-width: 100%;
 }
