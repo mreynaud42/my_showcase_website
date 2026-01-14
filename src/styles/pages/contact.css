@@ -1,0 +1,36 @@
+
+div.info-contact {
+    margin: 1rem;
+
+    display: flex;
+    justify-content: space-around;
+}  
+
+div.info-contact a {
+    display: block;
+    color: black;
+}
+
+div.info-contact a:hover {
+    text-decoration: underline;
+}
+
+div.social .social-media {
+    display: flex;
+    flex-direction: column;
+}
+
+div.social .social-media a {
+    margin: 0;
+    padding: 0;
+}
+
+div.social div.social-media a:hover {
+    background-color: transparent;
+}
+
+div.social .social-media a h2 {
+    font-weight: 500;
+    font-size: 1rem;
+    color: black;
+}
