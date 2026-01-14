@@ -23,21 +23,21 @@ header > div.top-bar, header label {
     align-items: center;
 }
 
-#menu-toggle {
+header #menu-toggle {
     display: none;
 }
 
-label.menu-button {
+header label.menu-button {
     cursor: pointer;
     z-index: 20;
 }
 
-a {
+header a {
     height: 100%;
     display: inline-block;
 }
 
-img {
+header img {
     height: 100%;
     max-width: 100%;
 }

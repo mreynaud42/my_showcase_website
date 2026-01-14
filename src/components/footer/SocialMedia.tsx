@@ -15,8 +15,10 @@ function Media({ href, nameMedia, children }: MediaType) {
     return (
         <div>
             <a href={href}  target="_blank">
-                {children}
-                <h2>{nameMedia}</h2>
+                <div>
+                    {children}
+                    <h2>{nameMedia}</h2>
+                </div>
             </a>
         </div>
     );
@@ -24,7 +26,7 @@ function Media({ href, nameMedia, children }: MediaType) {
 
 export default function SocialMedia() {
     return (
-        <div className="social_media">
+        <div className="social-media">
             <Media href="https://linkedin.com/in/mathis-reynaud" nameMedia="LinkedIn">
                 <LogoLinkedin />
             </Media>

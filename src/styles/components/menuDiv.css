@@ -64,7 +64,7 @@ div.logo svg{
     color: var(--primary-color);
 }
 
-.nav-menu a:hover {
+.nav-menu ul a:hover {
     background-color: var(--primary-color);
     color: var(--dark-secondary-color);
 }
@@ -79,6 +79,7 @@ div.social-media-menu a {
 }
 
 div.social-media-menu h2 {
+    color: var(--primary-color);
     font-size: 3vh;
     font-weight: 500
 }

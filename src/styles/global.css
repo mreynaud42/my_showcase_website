@@ -43,9 +43,34 @@ h1.namepage {
     text-align: center;
 }
 
+main section {
+    border-radius: 0 50px;
+    padding: 2%;
+    
+    background-color: rgba(255, 255, 255, 0.6);
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+main h2 {
+    margin-bottom: 1rem;
+    color: black;
+}
+
+main h3 {
+    margin-bottom: 0.5rem;
+}
+
 a, button, p, h1, h2, h3, h4, h5, h6 {
     position: relative;
+    color: black;
     z-index: 1;
+}
+
+a, p {
+    font-size: 1.2rem;
 }
 
 :is(a, button, p, h1, h2, h3, h4, h5, h6) * {
@@ -55,6 +80,12 @@ a, button, p, h1, h2, h3, h4, h5, h6 {
 
 a, a:visited {
   text-decoration: none;
+  color: var(--primary-color);
+}
+
+svg {
+    height: 100%;
+    width: auto;
 }
 
 .no-scroll {

@@ -21,22 +21,16 @@ footer > nav {
     gap: 5%;
 }
 
-p {
+footer p {
     color: white;
-    font-size: 1rem;
 }
 
-h2, svg {
+footer h2, footer svg {
     color: var(--primary-color);
     font-weight: 900;
 }
 
-a {
+footer a {
     height: 100%;
     display: inline-block;
-}
-
-svg {
-    height: 100%;
-    width: auto;
 }

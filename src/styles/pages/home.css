@@ -6,21 +6,8 @@ div.info {
     gap: 2%;
 }
 
-section {
-    border-radius: 0 50px ;
-    padding: 2%;
-
-    background-color: rgba(255, 255, 255, 0.6);
-}
-
 div.info > section {
     width: 50%;
-    border-radius: 0 50px;
-    padding: 2%;
-
-    
-    display: flex;
-    flex-direction: column;
 }
 
 div.info div.button {
@@ -29,17 +16,6 @@ div.info div.button {
 
 section.projects {
     width: 75%;
-}
-
-section h2 {
-    margin-bottom: 1rem;
-    color: black;
-}
-
-section p {
-    margin: 1rem 0;
-
-    color: black;
 }
 
 div.slider {
