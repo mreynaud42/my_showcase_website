@@ -1,0 +1,64 @@
+
+section.project {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+section.project div.project-img {
+   flex: 0 0 33%;
+   background-color:aqua;
+}
+
+section.project div.project-img img {
+    height: 100%;
+}
+
+section.project div.project-text {
+    flex: 1 0 66%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section.project div.project-description h2 {
+    margin-bottom: 2.5rem;
+}
+
+section.project div.project-description p {
+    margin-top: 1rem;
+}
+
+section.project div.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section.project div.footer > div {
+    max-width: 80%;
+    display: flex;
+    align-items: baseline;
+}
+
+section.project div.footer div.languages {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.project div.footer p {
+    display: inline;
+    white-space: nowrap;
+}
+
+section.project div.footer span {
+    margin: 0 5px;
+    white-space: nowrap;
+}
+
+section.project div.footer a {
+    color: black;
+    white-space: nowrap;
+}
