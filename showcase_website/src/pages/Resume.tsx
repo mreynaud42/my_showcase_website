@@ -16,7 +16,6 @@ export default function Resume() {
                     </a>
                 </div>
             </section>
-            {/* <ComingSoon /> */}
         </>
     );
 }
