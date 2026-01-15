@@ -1,19 +1,11 @@
 import ButtonCTA from "./ButtonCTA"
 
+import type { Project } from "../data/projects"
+
 import "../styles/components/projectDiv.css";
 
-export type ProjectProps = {
-    id: number;
-    href: string;
-    title: string;
-    description: string[];
-    hrefGithub: string;
-    languageUse: string[];
-    img?: string;
-}
-
 type ProjectDivProps = {
-    project: ProjectProps,
+    project: Project,
 }
 
 export default function ProjectDiv({ project }: ProjectDivProps) {
@@ -22,29 +14,41 @@ export default function ProjectDiv({ project }: ProjectDivProps) {
             <div className="project-text">
                 <div className="project-description">
                     <h2>{project.title}</h2>
-                    {project.description.map((projectP, index) => (
-                        <p key={index}>{projectP}</p>
+                    {project.shortDescription.description.map((p, index) => (
+                        <p key={index}>{p}</p>
                     ))}
                 </div>
             </div>
-            {project.img && (
-                <div className="project-img"><img src={project.img} alt={`project project${project.id}`} /></div>
+            {project.shortDescription.imgs && (
+                <div className="project-img">
+                    {project.shortDescription.imgs.map((img, index) => (
+                        <img key={index} src={img} alt={`Image of the ${project.title} project - image ${index + 1}`} />
+                    ))}
+                </div>
             )}
             <div className="footer">
                 <div className="button">
-                    <ButtonCTA href={project.href} cta="See my project"/>
+                    <ButtonCTA href={`/projects/${project.id}`} cta="See my project"/>
                 </div>
                 <div className="language-use">
-                    <p>Language use:</p>
+                    <p><strong>Language use:</strong></p>
                     <div className="languages">
-                        {project.languageUse.map((language, index) => (
-                            <span key={index}>{language}</span>
+                        {project.technologies.map((tech, index) => (
+                            <span key={index}>{tech}</span>
                         ))}
                     </div>
                 </div>
-                <div className="link">
-                    <a href={project.hrefGithub}>Link GitHub</a>
-                </div>
+                {(project.githubUrl || project.demoUrl) && (
+                    <div className="link">
+                        <p><strong>Link:</strong></p>
+                        {project.githubUrl && (
+                            <a href={project.githubUrl}>GitHub</a>
+                        )}
+                        {project.demoUrl && (
+                            <a href={project.githubUrl}>Demo</a>
+                        )}
+                    </div>
+                )}
             </div>
         </section>
     );

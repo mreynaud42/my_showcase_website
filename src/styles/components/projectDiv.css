@@ -71,7 +71,7 @@ section.project div.footer div.button {
 }
 
 section.project div.footer div.button svg{
-    color: var(--primary-color);;
+    color: var(--primary-color);
 }
 
 section.project div.footer div.link {
@@ -105,4 +105,12 @@ section.project div.footer span {
 section.project div.footer a {
     color: black;
     white-space: nowrap;
+}
+
+section.project div.link a {
+    margin: 0 5px;
+}
+
+section.project div.link a:hover {
+    text-decoration: underline;
 }
