@@ -14,7 +14,7 @@ div.info div.button {
     margin-top: auto;
 }
 
-section.projects {
+section.projects, section.home-resume {
     width: 75%;
 }
 

@@ -39,7 +39,15 @@ export default function Home() {
                     ))}
                 </SliderCards>
                 <div className="button">
-                    <ButtonCTA href="/projects" cta="See my projects"/>
+                    <ButtonCTA href="/projects" cta="See more of my projects"/>
+                </div>
+            </section>
+            <section className="home-resume">
+                <h2>Resume</h2>
+                <p>I am currently seeking a <strong>4 to 6 month internship in software development starting in March 2026</strong>, in order to put my technical skills into practice within a dynamic team. Motivated, rigorous, and curious, I am looking for professional experience that will allow me to make a concrete contribution to software projects while developing my skills in application design, development, and maintenance.</p>
+                <p>Want to see my resume?</p>
+                <div className="button">
+                    <ButtonCTA href="/resume" cta="See my resume"/>
                 </div>
             </section>
         </>
