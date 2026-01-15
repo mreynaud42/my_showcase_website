@@ -1,9 +1,15 @@
 import ButtonCTA from "../components/ButtonCTA"
 import SliderCards from "../components/SliderCards"
+import CardProjectHome from "../components/CardProjectHome"
+
+import { projects } from "../data/projects"
 
 import "../styles/pages/home.css";
 
 export default function Home() {
+
+    const featuredProjects = projects.filter(project => project.featured);
+
     return (
         <>
             <div className="head"><h1 className="namepage">Home</h1></div>
@@ -27,7 +33,11 @@ export default function Home() {
             </div>
             <section className="projects">
                 <h2>My Featured Projects</h2>
-                <SliderCards />
+                <SliderCards>
+                    {featuredProjects.map((featuredProject, index) => (
+                        <CardProjectHome key={index} project={featuredProject}></CardProjectHome>
+                    ))}
+                </SliderCards>
                 <div className="button">
                     <ButtonCTA href="/projects" cta="See my projects"/>
                 </div>

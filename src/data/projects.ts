@@ -13,6 +13,7 @@ export type Project = {
     technologies: string[];
     githubUrl?: string;
     demoUrl?: string;
+    featured: boolean;
 }
 
 export const projects: Project[] = [
@@ -42,6 +43,7 @@ export const projects: Project[] = [
         technologies: ["React", "TypeScript", "CSS", "html", "docker", "JavaScript", "PHP", "Three.JS", "Makefile", "C", "C++", "Rust", "assembly"],
         githubUrl: "/",
         demoUrl: "/",
+        featured: true,
     },
     {
         id: "testtest",
@@ -59,5 +61,6 @@ export const projects: Project[] = [
             },
         ],
         technologies: ["C"],
+        featured: true,
     }
 ]
