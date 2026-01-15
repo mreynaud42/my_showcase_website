@@ -1,7 +1,9 @@
 :root {
-  --primary-color: #F9EDCB;
-  --secondary-color: #454B5A;
-  --dark-secondary-color: #373c48;
+    --primary-color: #F9EDCB;
+    --light-primary-color: #fdf8ea;
+    --dark-primary-color: wheat;
+    --secondary-color: #454B5A;
+    --dark-secondary-color: #373c48;
 }
 
 * {
@@ -48,7 +50,7 @@ main section {
     border-radius: 0 50px;
     padding: 2%;
     
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: var(--light-primary-color);
 
     display: flex;
     flex-direction: column;
