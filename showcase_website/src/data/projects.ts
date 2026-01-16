@@ -61,6 +61,22 @@ export const projects: Project[] = [
             },
         ],
         technologies: ["C"],
+        featured: false,
+    },
+    {
+        id: "test",
+        title: "",
+        shortDescription: {
+            description: [],
+            imgs: []
+        },
+        fullDescription: [
+            {
+                title: "",
+                description: [],
+            },
+        ],
+        technologies: [],
         featured: true,
     }
 ]
