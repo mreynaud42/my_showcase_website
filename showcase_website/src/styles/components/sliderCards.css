@@ -11,7 +11,7 @@ div.slider {
     --height-card: 300px;
 }
 
-div.cards-size {
+div.slider div.cards-size {
     margin: 0 calc(50px + 2%);
 
     overflow: hidden;
@@ -27,7 +27,7 @@ div.slider-cards {
     transition: transform 0.5s ease;
 }
 
-div.card {
+div.slider div.card {
     width: 100%;
     height: var(--height-card);
 
@@ -38,7 +38,7 @@ div.card {
     justify-content: center;
 }
 
-div.card p {
+div.slider div.card p {
     height: min-content;
     margin: 0;
 }
