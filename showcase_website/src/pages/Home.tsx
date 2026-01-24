@@ -8,11 +8,11 @@ import { projects } from "../data/projects"
 
 import "../styles/pages/home.css";
 
-type SpotlightProps = {
+type HoleProps = {
     children?: React.ReactNode;
 };
 
-function Spotlight({ children }: SpotlightProps) {
+function Hole({ children }: HoleProps) {
     const [pos, setPos] = useState({ x: 0, y: 0 });
 
     useEffect(() => {
@@ -26,7 +26,7 @@ function Spotlight({ children }: SpotlightProps) {
     }, []);
 
     return (
-        <div className="spotlight img img-front"
+        <div className="hole img img-front"
         style={{
             "--x": `${pos.x}px`,
             "--y": `${pos.y}px`,
@@ -45,7 +45,7 @@ export default function Home() {
             <div className="title"><h1 className="namepage">Home</h1></div>
             <div className="head">
                 <div className="img img-back"></div>
-                <Spotlight></Spotlight>
+                <Hole></Hole>
             </div>
             <div className="info">
                 <section className="me">
