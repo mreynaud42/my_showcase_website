@@ -6,8 +6,8 @@ import "../styles/pages/about.css";
 export default function About() {
     return (
         <>
-            <div className="head"><h1 className="namepage">About</h1></div>
-
+            <div className="title"><h1 className="namepage">About</h1></div>
+            <div className="head"></div>
             <section>
                 <CardPictureAbout />
             </section>

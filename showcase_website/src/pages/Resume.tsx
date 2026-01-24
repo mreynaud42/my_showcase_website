@@ -5,7 +5,8 @@ import "../styles/pages/resume.css";
 export default function Resume() {
     return (
         <>
-            <div className="head"><h1 className="namepage">Resume</h1></div>
+            <div className="title"><h1 className="namepage">Resume</h1></div>
+            <div className="head"></div>
             <section className="resume">
                 <h2>Mathis Reynaud's resume</h2>
                 <iframe src="/external_resource/resume.pdf#page=1&zoom=20" width="600" height="848"/>

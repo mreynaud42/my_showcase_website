@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 import ButtonCTA from "../components/ButtonCTA"
 import SliderCards from "../components/SliderCards"
 import CardProjectHome from "../components/CardProjectHome"
@@ -6,13 +8,45 @@ import { projects } from "../data/projects"
 
 import "../styles/pages/home.css";
 
+type SpotlightProps = {
+    children?: React.ReactNode;
+};
+
+function Spotlight({ children }: SpotlightProps) {
+    const [pos, setPos] = useState({ x: 0, y: 0 });
+
+    useEffect(() => {
+        const handleMouseMove = (e: MouseEvent) => {
+        setPos({ x: e.clientX + window.scrollX, y: e.clientY + window.scrollY });
+        };
+
+
+        window.addEventListener("mousemove", handleMouseMove);
+        return () => window.removeEventListener("mousemove", handleMouseMove);
+    }, []);
+
+    return (
+        <div className="spotlight img img-front"
+        style={{
+            "--x": `${pos.x}px`,
+            "--y": `${pos.y}px`,
+        } as React.CSSProperties}>
+            {children}
+        </div>
+    );
+}
+
 export default function Home() {
 
     const featuredProjects = projects.filter(project => project.featured);
 
     return (
         <>
-            <div className="head"><h1 className="namepage">Home</h1></div>
+            <div className="title"><h1 className="namepage">Home</h1></div>
+            <div className="head">
+                <div className="img img-back"></div>
+                <Spotlight></Spotlight>
+            </div>
             <div className="info">
                 <section className="me">
                     <h2>Mathis Reynaud</h2>

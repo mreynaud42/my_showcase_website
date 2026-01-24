@@ -12,7 +12,8 @@ export default function ProjectDetail() {
 
     return (
         <>
-            <div className="head"><h1 className="namepage">{project.title}</h1></div>
+            <div className="title"><h1 className="namepage">{project.title}</h1></div>
+            <div className="head"></div>
             <ComingSoon />
         </>
     );
