@@ -30,14 +30,16 @@ export default function ProjectDiv({ project }: ProjectDivProps) {
                 <div className="button">
                     <ButtonCTA href={`/projects/${project.id}`} cta="See my project"/>
                 </div>
-                <div className="language-use">
-                    <p><strong>Language use:</strong></p>
-                    <div className="languages">
-                        {project.technologies.map((tech, index) => (
-                            <span key={index}>{tech}</span>
-                        ))}
+                {(project.technologies.length !== 0) && (
+                    <div className="language-use">
+                        <p><strong>Language use:</strong></p>
+                        <div className="languages">
+                            {project.technologies.map((tech, index) => (
+                                <span key={index}>{tech}</span>
+                            ))}
+                        </div>
                     </div>
-                </div>
+                )}
                 {(project.githubUrl || project.demoUrl) && (
                     <div className="link">
                         <p><strong>Link:</strong></p>
