@@ -1,6 +1,7 @@
-import ButtonCTA from "../components/ButtonCTA"
+import IconSend from "../components/icon/send"
 
 import "../styles/pages/contact.css";
+import "../styles/components/button.css";
 
 export default function Contact() {
     return (
@@ -18,12 +19,15 @@ export default function Contact() {
                     </div>
                     <div className="social">
                         <h3>Social media:</h3>
-                        <a href="https://github.com/mreynaud42">GitHub: github.com/mreynaud42</a>
-                        <a href="https://linkedin.com/in/mathis-reynaud">mail: linkedin.com/in/mathis-reynaud</a>
+                        <a href="https://github.com/mreynaud42" target="_blank">GitHub: github.com/mreynaud42</a>
+                        <a href="https://linkedin.com/in/mathis-reynaud" target="_blank">LinkedIn: linkedin.com/in/mathis-reynaud</a>
                     </div>
                 </div>
                 <div className="button">
-                    <ButtonCTA href="mailto:mathisreynaud07@gmail.com" cta="Send me an email"/>
+                    <a href="mailto:mathisreynaud07@gmail.com" className="button">
+                        <div><p className="text-cta">Send me an email</p></div>
+                        <span><IconSend /></span>
+                    </a>
                 </div>
             </section>
         </>
