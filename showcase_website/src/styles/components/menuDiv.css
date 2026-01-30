@@ -76,10 +76,10 @@ div.social-media-menu {
 div.social-media-menu a {
     border-radius: 5px;
     padding: 1vh;
+    color: var(--primary-color);
 }
 
 div.social-media-menu h2 {
-    color: var(--primary-color);
     font-size: 3vh;
     font-weight: 500
 }

@@ -103,12 +103,12 @@ section.project div.footer span {
 }
 
 section.project div.footer a {
-    color: black;
     white-space: nowrap;
 }
 
 section.project div.link a {
     margin: 0 5px;
+    color: black;
 }
 
 section.project div.link a:hover {
