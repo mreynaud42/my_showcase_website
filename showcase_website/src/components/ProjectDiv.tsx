@@ -1,4 +1,5 @@
 import ButtonCTA from "./ButtonCTA"
+import ButtonTech from "./ButtonTech"
 
 import type { Project } from "../data/projects"
 
@@ -26,23 +27,19 @@ export default function ProjectDiv({ project }: ProjectDivProps) {
                     ))}
                 </div>
             )}
+            <div className="button">
+                <ButtonCTA href={`/projects/${project.id}`} cta="See my project"/>
+            </div>
             <div className="footer">
-                <div className="button">
-                    <ButtonCTA href={`/projects/${project.id}`} cta="See my project"/>
-                </div>
                 {(project.technologies.length !== 0) && (
-                    <div className="language-use">
-                        <p><strong>Language use:</strong></p>
-                        <div className="languages">
+                    <div className="technologies">
                             {project.technologies.map((tech, index) => (
-                                <span key={index}>{tech}</span>
+                                <ButtonTech key={index} technologie={tech}/>
                             ))}
-                        </div>
                     </div>
                 )}
                 {(project.githubUrl || project.demoUrl) && (
-                    <div className="link">
-                        <p><strong>Link:</strong></p>
+                    <div className="links">
                         {project.githubUrl && (
                             <a href={project.githubUrl}>GitHub</a>
                         )}

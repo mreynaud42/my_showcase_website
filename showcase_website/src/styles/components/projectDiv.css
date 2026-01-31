@@ -5,6 +5,7 @@ section.project {
     grid-template-rows: auto; 
     grid-template-areas:
         "text img"
+        "button button"
         "footer footer";
     grid-column-gap: 1.5rem;
     grid-row-gap: 1.5rem; 
@@ -53,64 +54,31 @@ section.project div.project-description p {
     margin-top: 1rem;
 }
 
-section.project div.footer {
-    grid-area: footer;
-
-    display: grid;
-    grid-template-columns: 1fr 40%;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "button button"
-        "language link";
-    grid-column-gap: 1.5rem;
-    grid-row-gap: 1.5rem;
-}
-
-section.project div.footer div.button {
+section.project div.button {
     grid-area: button;
 }
 
-section.project div.footer div.button svg{
-    color: var(--primary-color);
-}
+section.project div.footer {
+    grid-area: footer;
 
-section.project div.footer div.link {
-    grid-area: link;
-
-    text-align: right;
-}
-
-section.project div.footer div.language-use {
-    grid-area: language;
-    
     display: flex;
-    align-items: baseline;
+    justify-content: space-between;
 }
 
-section.project div.footer div.languages {
+section.project div.footer div.technologies {
     display: flex;
     flex-wrap: wrap;
 }
 
-section.project div.footer p {
-    display: inline;
-    white-space: nowrap;
+section.project div.footer div.links {
+    text-align: right;
 }
 
-section.project div.footer span {
-    margin: 0 5px;
-    white-space: nowrap;
-}
-
-section.project div.footer a {
-    white-space: nowrap;
-}
-
-section.project div.link a {
+section.project div.links a {
     margin: 0 5px;
     color: black;
 }
 
-section.project div.link a:hover {
+section.project div.links a:hover {
     text-decoration: underline;
 }
