@@ -14,7 +14,7 @@ type MediaType = {
 function Media({ href, nameMedia, children }: MediaType) {
     return (
         <div>
-            <a href={href}  target="_blank">
+            <a href={href} target="_blank">
                 <div>
                     {children}
                     <h2>{nameMedia}</h2>
