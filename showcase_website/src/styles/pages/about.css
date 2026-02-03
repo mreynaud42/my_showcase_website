@@ -2,3 +2,7 @@
 section {
     width: 75%;
 }
+
+section.text a:hover {
+    text-decoration: underline;
+}
