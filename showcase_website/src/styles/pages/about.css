@@ -3,6 +3,11 @@ section {
     width: 75%;
 }
 
+.card-picture-about {
+    margin-top: 3rem;
+}
+
 section.text a:hover {
     text-decoration: underline;
 }
+

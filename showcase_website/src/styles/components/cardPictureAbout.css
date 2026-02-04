@@ -11,19 +11,18 @@ div.picture-cards {
 div.picture-cards div.card {
     width: 15rem;
     height: 30rem;
-    
-    border: 1px solid black;
+
     border-radius: 3rem;
 
     overflow: hidden;
 
     transform: translate(var(--tx), var(--ty)) rotate(var(--rot));
-    transition: transform 0.5s cubic-bezier(.68,-0.55,.27,1.55);
+    transition: transform 0.5s cubic-bezier(.08,.82,.17,1);
 }
 
 div.picture-cards div.card:hover {
     transform: translate(var(--tx), calc(var(--ty) - 3rem)) rotate(var(--rot)) scale(1.2);
-    transition: transform 0.5s cubic-bezier(.68,-0.55,.27,1.55);
+    transition: transform 0.5s cubic-bezier(.08,.82,.17,1);
 }
 
 figure {
@@ -42,14 +41,31 @@ figure img {
 }
 
 figcaption {
+    padding: 5px 10%;
+    width: 100%;
+
     display: none;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+
+    color: black;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+
     bottom: 0;
 }
 
+figcaption a, figcaption p {
+
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+figcaption a:hover {
+    text-decoration: underline;
+}
+
 figure:hover figcaption {
-    display: block;
+    display: flex;
+    justify-content: center;
 }
 

@@ -4,21 +4,22 @@ import { useState } from "react";
 import "../styles/components/cardPictureAbout.css";
 
 function getCardTransform(index: number, total: number) {
-  const center = (total - 1) / 2;
-  const shift = index - center;
+    const center = (total - 1) / 2;
+    const shift = index - center;
 
-  return {
-    tx: `${shift * -1.5}rem`,
-    ty: `${Math.abs(shift) * 0.8}rem`,
-    rot: `${shift * 7}deg`,
-    z: total - Math.abs(shift)
-  };
+    return {
+        tx: `${shift * -1.5}rem`,
+        ty: `${Math.abs(shift) * 0.8}rem`,
+        rot: `${shift * 7}deg`,
+        z: total - Math.abs(shift)
+    };
 }
 
 type PictureCardData = {
     img: string;
     alt: string;
-    caption: string;
+    caption?: string;
+    captionHref?: string;
 };
 
 type PictureCardsProps = {
@@ -49,7 +50,11 @@ export default function PictureCards({ cards }: PictureCardsProps) {
                     } onMouseEnter={() => setHover(i)} onMouseLeave={() => setHover(null)}>
                         <figure>
                             <img src={card.img} alt={card.alt} />
-                            <figcaption>{card.caption}</figcaption>
+                            {(card.caption) && (
+                                <figcaption>
+                                    {card.captionHref ? <a href={card.captionHref} target="_blank">{card.caption}</a> : <p>{card.caption}</p>}
+                                </figcaption>
+                            )}
                         </figure>
                     </div>
                 )

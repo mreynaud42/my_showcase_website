@@ -1,7 +1,21 @@
-import ComingSoon from "../components/ComingSoon"
-import CardPictureAbout from "../components/CardPictureAbout"
+import PictureCards from "../components/PictureCards"
 
 import "../styles/pages/about.css";
+
+function CardPictureAbout() {
+    return (
+        <div className="card-picture-about">
+            <PictureCards cards={[
+                { img: "photos/about/climbing3.jpg", alt: "" },
+                { img: "photos/about/white_bg7.jpg", alt: "", caption: "© maumau_pompom - 2026", captionHref: "https://www.instagram.com/maumau_pompom?igsh=eWEybGc4eXIwZGp4" },
+                { img: "photos/about/black_bg8.jpg", alt: "", caption: "© maumau_pompom - 2026", captionHref: "https://www.instagram.com/maumau_pompom?igsh=eWEybGc4eXIwZGp4" },
+                { img: "photos/about/white_bg8.jpg", alt: "", caption: "© maumau_pompom - 2026", captionHref: "https://www.instagram.com/maumau_pompom?igsh=eWEybGc4eXIwZGp4" },
+                { img: "photos/about/climbing1.jpg", alt: "" },
+                { img: "photos/about/black_bg4.jpg", alt: "", caption: "© maumau_pompom - 2026", captionHref: "https://www.instagram.com/maumau_pompom?igsh=eWEybGc4eXIwZGp4" },
+            ]}/>
+        </div>
+    );
+}
 
 export default function About() {
     return (
@@ -14,11 +28,8 @@ export default function About() {
                 <p>I have been passionate about programming since middle school, where I created my first games using <strong>Scratch</strong>, both at school and at home. This interest grew stronger in high school during my <strong>STI2D degree</strong>, specializing in <strong>Information Systems and Digital Technologies</strong> (<strong>SIN</strong>), which provided me with solid foundations in computer science. Alongside my studies, I also learned <strong>HTML</strong> and <strong>CSS</strong> through an online course.</p>
                 <p>I then continued my education at the <strong>Computer Science Institute of Technology</strong> (<strong>IUT</strong>) in Valence, where I explored various programming languages and strengthened my technical fundamentals. After successfully completing my first year, I decided to join <strong>42 Lyon</strong>, drawn by its unique learning approach. There, I mainly worked with <strong>C</strong>, <strong>C++</strong>, and <strong>web development</strong>, while also developing essential skills such as <strong>autonomy</strong>, <strong>rigor</strong>, and the ability to <strong>learn how to learn</strong>.</p>
                 <p>Outside of technology, I have been practicing <strong>climbing</strong> for over 10 years and enjoy sports in general. I am also passionate about games, especially <strong>board games</strong>, <strong>strategy</strong>, and <strong>logic games</strong>, with a particular interest in <strong>chess</strong>.</p>
-            </section>
-            <section>
                 <CardPictureAbout />
             </section>
-            <ComingSoon />
         </>
     );
 }
