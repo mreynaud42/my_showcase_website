@@ -7,20 +7,20 @@ div.tooltip {
     max-width: 20vw;
     margin-top: 0.2rem;
     padding: 0.2rem;
-    border: 1px solid var(--dark-secondary-color);
+    border: 1px solid black;
     border-radius: 0.25rem;
 
     visibility: hidden;
     position: absolute;
 
-    background: var(--secondary-color);
-    color: white;
+    background: var(--light-primary-color);
+    color: black;
 
     z-index: 2;
 }
 
 div.tooltip h1 {
-    color: var(--primary-color);
+    color: black;
     font-size: 1rem;
 }
 

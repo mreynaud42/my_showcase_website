@@ -57,28 +57,3 @@ section.project div.project-description p {
 section.project div.button {
     grid-area: button;
 }
-
-section.project div.footer {
-    grid-area: footer;
-
-    display: flex;
-    justify-content: space-between;
-}
-
-section.project div.footer div.technologies {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-section.project div.footer div.links {
-    text-align: right;
-}
-
-section.project div.links a {
-    margin: 0 5px;
-    color: black;
-}
-
-section.project div.links a:hover {
-    text-decoration: underline;
-}
