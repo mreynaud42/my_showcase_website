@@ -12,18 +12,42 @@ div.head div.img {
 
     position: absolute;
     top: 0;
+
+    background-color: var(--primary-color);
+
+    display: flex;
+    justify-content: center;
+
+    overflow: hidden;
 }
 
-div.head div.img-back {
-    background-color: aqua;
+div.head div.img img {
+    position: absolute;
 }
 
-div.head div.img-front {
-    background-color: violet;
+div.head div.img-back img {
+    height: 100%;
+    width: 100%;
+}
+
+div.head div.img-back img.landscape {
+    object-fit: cover;
+    object-position: center;
+}
+
+div.head div.img-front img.my-head {
+    padding-top: 75px;
+    max-height: 150%;
+}
+
+div.head div.img img.logo {
+    align-self: center;
+
+    width: 80vw;
 }
 
 div.head div.hole {
-    --radius: 5rem;
+    --radius: 12rem;
     -webkit-mask-image: radial-gradient(
         circle at var(--x) var(--y),
         transparent 0,

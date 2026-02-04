@@ -44,8 +44,18 @@ export default function Home() {
         <>
             <div className="title"><h1 className="namepage">Home</h1></div>
             <div className="head">
-                <div className="img img-back"></div>
-                <Hole></Hole>
+                <div className="img img-back">
+                    <>
+                        <img src="/photos/windows_xp_landscape.jpg" alt="" className="landscape"/>
+                        <img src="/logo/mathis_reynaud.svg" alt="" className="logo" />
+                    </>
+                </div>
+                <Hole>
+                    <>
+                        <img src="/logo/mathis_reynaud.svg" alt="" className="logo" />
+                        <img src="/photos/head_home/rsz_head1_bis.png" alt="" className="my-head"/>
+                    </>
+                </Hole>
             </div>
             <div className="info">
                 <section className="me">
