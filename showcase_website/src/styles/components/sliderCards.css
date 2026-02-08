@@ -8,7 +8,7 @@ div.slider {
 
     user-select: none;
 
-    --height-card: 300px;
+    --height-card: 55vh;
 }
 
 div.slider div.cards-size {
@@ -40,7 +40,6 @@ div.slider div.card {
 
 div.slider div.card p {
     height: min-content;
-    margin: 0;
 }
 
 ol.dots-cards {
