@@ -18,65 +18,124 @@ export type Project = {
 
 export const projects: Project[] = [
     {
-        id: "Lorem-ipsum",
-        title: "Lorem ipsum",
+        id: "fract-ol",
+        title: "Fract-ol",
         shortDescription: {
             description: [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed mi faucibus, ultrices sem ac, feugiat quam. Etiam vitae tellus enim. Vivamus in pellentesque erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas eros eros, dapibus vitae ex in, hendrerit molestie libero. Donec pharetra purus eleifend massa maximus molestie sit amet ac nibh. Nam tempus purus id augue vestibulum, bibendum placerat libero placerat."
+                "Fract-ol is a project from École 42 that aims to create a program capable of displaying images called fractals. These are unique visual forms that feature repetitive patterns rich in detail, even when zooming in on the image.",
+                "The project involves generating these images and allowing the user to interact with them: moving around, zooming in, and changing colors. This helps users understand how a computer builds an image from simple rules and how a program can respond to user actions.",
+                "Fract-ol is primarily an introductory project to graphic programming. It emphasizes logic, program structure, and the link between abstract rules and concrete visual results, without requiring advanced mathematical knowledge.",
             ],
-            imgs: ["/menu.svg"]
+            imgs: [ "/img_project/fract-ol/mandelbrot.png" ]
         },
-        fullDescription: [
-            {
-                title: "test1",
-                description: ["test1", "test1", "test1"],
-            },
-            {
-                title: "test2",
-                description: [
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed mi faucibus, ultrices sem ac, feugiat quam. Etiam vitae tellus enim. Vivamus in pellentesque erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas eros eros, dapibus vitae ex in, hendrerit molestie libero. Donec pharetra purus eleifend massa maximus molestie sit amet ac nibh. Nam tempus purus id augue vestibulum, bibendum placerat libero placerat.",
-                    "Phasellus malesuada placerat orci non condimentum. Praesent rutrum tortor sed ornare pellentesque. Praesent eleifend metus neque, eu vestibulum neque tempus sit amet. Donec egestas quam ac luctus condimentum. Duis scelerisque nibh quam. Aliquam quis ornare leo. Quisque eleifend, enim eu interdum eleifend, augue mi finibus diam, ut lobortis odio velit in massa. Pellentesque sit amet blandit mauris. Phasellus lacus nisi, tincidunt sed rutrum a, convallis id dui. ",
-                    "Nulla vehicula ligula vel diam feugiat, nec blandit quam finibus. Phasellus nulla dolor, vulputate et consectetur tincidunt, hendrerit sit amet dui. Suspendisse potenti. Proin cursus justo nec semper luctus. Nam consequat risus quis volutpat rutrum. Nullam ut augue felis. Mauris pretium vestibulum velit, quis feugiat elit consequat at. Praesent gravida mauris elit, a aliquam tortor commodo vitae. Phasellus vitae mi sit amet leo pretium suscipit ac nec tortor. Integer sit amet metus ac tellus varius eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer convallis pulvinar purus et laoreet. Vestibulum sit amet rutrum massa, in pharetra leo. Duis sed ultrices ligula. Integer sit amet turpis sit amet orci placerat pulvinar sit amet at dui.",
-                ]
-            }
-        ],
-        technologies: ["React", "TypeScript", "CSS", "html", "docker", "JavaScript", "PHP", "Three.JS", "Makefile", "C", "C++", "Rust", "assembly"],
-        githubUrl: "/",
-        demoUrl: "/",
+        fullDescription: [ ],
+        technologies: [ "C", "Makefile" ],
+        githubUrl: "https://github.com/mreynaud42/fract-ol",
         featured: true,
     },
+
     {
-        id: "testtest",
-        title: "testtest",
+        id: "minishell",
+        title: "Minishell",
         shortDescription: {
             description: [
-                "Ut at nulla laoreet, convallis turpis et, rhoncus dui. Duis efficitur semper nisi pulvinar fermentum. Pellentesque auctor erat sed diam elementum, nec convallis nibh viverra. Nulla convallis turpis sit amet nunc viverra fermentum. Nunc ultricies justo vel nulla pharetra, et congue ante congue. Praesent id nibh augue. Donec pulvinar tempor nisi quis varius. Maecenas mollis pharetra magna, ut elementum mi rhoncus vitae. Mauris rutrum tellus a magna rutrum varius. Vestibulum vestibulum venenatis sem. Ut ornare varius tincidunt. Aliquam vel nulla congue, pellentesque mi sit amet, faucibus diam."
+                "Minishell is a project that involves recreating a simplified version of a terminal, i.e., the tool used to give commands to a computer in text form. The program must understand what the user writes, perform the correct actions, and display the results.",
+                "This project provides a better understanding of how a system interprets commands, manages multiple actions in sequence, and communicates with the computer.",
             ],
-            imgs: ["/notExiste.png"]
         },
-        fullDescription: [
-            {
-                title: "testtest2",
-                description: ["testtest testtest testtest", "testtest", "testtest"],
-            },
-        ],
-        technologies: ["C"],
-        featured: false,
+        fullDescription: [ ],
+        technologies: [ "C", "Makefile", "Shell" ],
+        githubUrl: "https://github.com/mreynaud42/minishell3",
+        featured: true,
     },
+
     {
-        id: "test",
+        id: "push-swap",
+        title: "Push-swap",
+        shortDescription: {
+            description: [
+                "Push-swap is a project focused on optimization and logic. The goal is to sort a list of numbers using a very limited set of possible actions. The challenge is not only to sort, but to do so with as few actions as possible.",
+                "This project teaches how to analyze a problem, think about effective strategies, and compare different solutions.",
+            ],
+            imgs: [ "/img_project/push_swap/radix_sort.gif" ]
+        },
+        fullDescription: [],
+        technologies: [ "C", "Makefile" ],
+        githubUrl: "https://github.com/mreynaud42/push_swap",
+        featured: true,
+    },
+
+    {
+        id: "philosophers",
+        title: "Philosophers",
+        shortDescription: {
+            description: [
+                "The Philosophers project is inspired by a classic problem in computer science. It involves several “philosophers” who must share resources without coming into conflict. The goal is to correctly manage simultaneous actions without deadlocks or errors.",
+                "This project helps us understand how a program can manage multiple tasks at the same time, and why coordination is essential.",
+            ],
+        },
+        fullDescription: [],
+        technologies: [ "C", "Makefile" ],
+        githubUrl: "https://github.com/mreynaud42/philo",
+        featured: true,
+    },
+
+    {
+        id: "transcendence",
+        title: "Transcendence",
+        shortDescription: {
+            description: [
+                "Transcendence is the final project in the core curriculum at École 42. It involves creating a complete application, accessible via a browser, integrating the game Pong, user interactions, and account management.",
+                "This project draws on all the skills acquired previously: organization, teamwork, and the design of a coherent and functional product. It is similar to a real professional project, where the goal is to deliver a fully functional application.",
+            ],
+        },
+        fullDescription: [],
+        technologies: [ "TypeScript", "JavaScript", "HTML", "CSS", "Docker", "Makefile" ],
+        githubUrl: "https://github.com/qxxel/ft_transcendence",
+        featured: true,
+    },
+
+    {
+        id: "cub3D",
+        title: "Cub3D",
+        shortDescription: {
+            description: [
+                "Cub3D is a project from École 42 that involves creating a small first-person game inspired by the very first 3D games. The program displays an environment in which the user can move around, as if exploring a maze.",
+                "The aim of the project is to understand how a computer can give an impression of depth and space (3D) from a two-dimensional environment. The user can move around, rotate the camera, and interact visually with the scenery.",
+                "Cub3D allows you to work on spatial representation, graphic display, and motion management. It is a project that links the logic of the program to a concrete visual rendering, similar to a simple but complete video game.",
+            ],
+            imgs: [ "/img_project/cub3d/Screenshot_42_cub.png" ]
+        },
+        fullDescription: [],
+        technologies: [ "C", "Makefile" ],
+        githubUrl: "https://github.com/qxxel/cub3d",
+        featured: true,
+    },
+
+    {
+        id: "ft_irc",
+        title: "ft_IRC",
+        shortDescription: {
+            description: [
+                "The IRC project consists of creating a chat server that allows multiple users to communicate in real time, similar to old-fashioned chat rooms. Users can log in, exchange messages, and join discussion groups.",
+                "This project provides insight into how applications communicate with each other remotely and how a service can manage multiple users at the same time. It covers concepts such as connection management, messaging, and communication rules.",
+                "IRC is a project focused on real-time exchanges and coordination between users. It illustrates the design of an interactive service and the implementation of common rules to ensure smooth and organized communication.",
+            ],
+        },
+        fullDescription: [],
+        technologies: [ "C++", "Makefile" ],
+        featured: true,
+    },
+    
+    {
+        id: "",
         title: "",
         shortDescription: {
             description: [],
-            imgs: []
         },
-        fullDescription: [
-            {
-                title: "",
-                description: [],
-            },
-        ],
+        fullDescription: [],
         technologies: [],
-        featured: true,
+        githubUrl: "",
+        featured: false,
     }
 ]
