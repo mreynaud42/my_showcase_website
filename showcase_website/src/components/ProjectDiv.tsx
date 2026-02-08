@@ -59,9 +59,11 @@ export default function ProjectDiv({ project }: ProjectDivProps) {
                     ))}
                 </div>
             )}
-            <div className="button">
-                <ButtonCTA href={`/projects/${project.id}`} cta="See my project"/>
-            </div>
+            {project.featured && (
+                <div className="button">
+                    <ButtonCTA href={`/projects/${project.id}`} cta="See my project"/>
+                </div>
+            )}
             <ProjectDivFooter project={project}/>
         </section>
     );
