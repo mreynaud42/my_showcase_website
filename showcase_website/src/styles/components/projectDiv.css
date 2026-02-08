@@ -21,12 +21,14 @@ section.project:not(:has(.project-img)) {
 
 section.project div.project-img {
    grid-area: img;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   gap: 1rem;
 }
 
 section.project div.project-img img {
-    position: sticky;
-    top: 0;
-
     height: auto;
     width: 100%;
     max-width: 100%;
@@ -44,7 +46,7 @@ section.project div.project-text {
 
 section.project div.project-description {
     position: sticky;
-    top: 0;
+    top: 5vh;
 }
 
 section.project div.project-description h2 {
