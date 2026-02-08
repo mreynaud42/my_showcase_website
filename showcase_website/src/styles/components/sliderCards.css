@@ -8,7 +8,7 @@ div.slider {
 
     user-select: none;
 
-    --height-card: 55vh;
+    --height-card: min(400px, 55vh);
 }
 
 div.slider div.cards-size {
@@ -90,7 +90,6 @@ div.slider button {
 }
 
 div.slider button.left {
-    /* left: 5px; */
     left: 0;
 
     padding-right: 3px;
@@ -101,7 +100,6 @@ div.slider button.left svg{
 }
 
 div.slider button.right {
-    /* right: 5px; */
     right: 0;
 
     padding-left: 3px;
