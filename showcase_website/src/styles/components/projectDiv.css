@@ -15,6 +15,7 @@ section.project:not(:has(.project-img)) {
     grid-template-columns: 1fr;
     grid-template-areas:
         "text"
+        "button"
         "footer";
 }
 
