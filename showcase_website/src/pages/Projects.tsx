@@ -1,4 +1,3 @@
-import ComingSoon from "../components/ComingSoon"
 import ProjectDiv from "../components/ProjectDiv"
 
 import { projects } from "../data/projects"
@@ -14,7 +13,6 @@ export default function Projects() {
             {projects.map((project, index) => (
                 <ProjectDiv key={index} project={project}/>
             ))}
-            <ComingSoon/>
         </>
     );
 }
