@@ -1,0 +1,30 @@
+{
+    "common": {
+        "ctaDefault": "Voir la page"
+    },
+    "header": {},
+    "footer": {},
+    "home": {
+        "title": "Accueil",
+        "description": "Un espace dédié à la présentation de mes compétences, de mon expérience et de mes projets informatiques."
+
+    },
+    "about": {
+        "title": "À propos",
+        "description": "En tant que développeur passionné par l'informatique et les nouvelles technologies, je présente ici mon parcours professionnel.",
+        "cta": "À propos de moi"
+    },
+    "projects": {
+        "title": "Projets",
+        "description": "Une sélection de projets personnels et professionnels mettant en avant mes compétences techniques, mes méthodes de travail et mon approche du développement informatique.",
+        "cta": "Voir les projets"
+    },
+    "contact": {
+        "title": "Contact",
+        "description": "Vous avez une question ou une <strong>opportunité professionnelle</strong> ? N'hésitez pas à me contacter pour en discuter ou en savoir plus sur mon profil.",
+        "cta": "Contactez-moi"
+    },
+    "resume": {
+        "title": "CV"
+    }
+}

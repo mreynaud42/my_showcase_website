@@ -1,0 +1,30 @@
+{
+    "common": {
+        "ctaDefault": "See page"
+    },
+    "header": {},
+    "footer": {},
+    "home": {
+        "title": "Home",
+        "description": "A space dedicated to showcasing my skills, experience, and IT projects."
+
+    },
+    "about": {
+        "title": "About",
+        "description": "As a developer passionate about IT and modern technologies, I present my career path here.",
+        "cta": "About me"
+    },
+    "projects": {
+        "title": "Projects",
+        "description": "A selection of personal and professional projects highlighting my technical skills, working methods, and approach to IT development.",
+        "cta": "See my projects"
+    },
+    "contact": {
+        "title": "Contact",
+        "description": "Have a question or a <strong>professional opportunity</strong>? Feel free to contact me to discuss or learn more about my profile.",
+        "cta": "Contact me"
+    },
+    "resume": {
+        "title": "Resume"
+    }
+}
