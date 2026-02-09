@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
 import MenuDiv from "./MenuDiv"
+import LangSelector from "./LangSelector";
 
 import "../../styles/components/header/header.css";
 
@@ -30,6 +31,7 @@ export default function Header() {
                 </label>
             </div>
             <MenuDiv className={`${isCheck ? "check" : ""}`}/>
+            <LangSelector/>
         </header>
     );
 }
