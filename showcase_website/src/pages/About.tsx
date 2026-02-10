@@ -20,7 +20,16 @@ function CardPictureAbout() {
 export default function About() {
     return (
         <div className="about">
-            <div className="head"></div>
+            <div className="head">
+                <div className="img">
+                    <img src="photos/about/horiz_natural_bg.jpg" alt="" />
+                </div>
+                <div className="text">
+                    <h1>About me</h1>
+                    <p>Developer in training at 42 Lyon.</p>
+                    <p>Discover my background and my projects.</p>
+                </div>
+            </div>
             <section className="text">
                 <h1>About me</h1>
                 <p>Hi, my name is <strong>Mathis Reynaud</strong>. I am a student at <strong>42 Lyon</strong>, currently working toward a <a href="https://www.francecompetences.fr/recherche/rncp/39783/" target="_blank">Level 6 RNCP certification (39783)</a>. As part of this journey, I am actively looking for an <strong>internship</strong>, followed by a work-study position, to further develop my skills and gain a deeper understanding of the tech industry.</p>
