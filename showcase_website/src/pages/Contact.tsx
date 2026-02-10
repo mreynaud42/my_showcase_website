@@ -6,7 +6,6 @@ import "../styles/components/button.css";
 export default function Contact() {
     return (
         <>
-            <div className="title"><h1 className="namepage">Contact</h1></div>
             <div className="head"></div>
             <section className="contact">
                 <h2>Contact me</h2>

@@ -20,7 +20,6 @@ function CardPictureAbout() {
 export default function About() {
     return (
         <>
-            <div className="title"><h1 className="namepage">About</h1></div>
             <div className="head"></div>
             <section className="text">
                 <h1>About me</h1>

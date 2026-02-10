@@ -7,7 +7,6 @@ import "../styles/components/button.css";
 export default function Resume() {
     return (
         <>
-            <div className="title"><h1 className="namepage">Resume</h1></div>
             <div className="head"></div>
             <section className="resume">
                 <h2>Mathis Reynaud's resume</h2>

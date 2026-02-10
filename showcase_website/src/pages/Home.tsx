@@ -42,7 +42,6 @@ export default function Home() {
 
     return (
         <>
-            <div className="title"><h1 className="namepage">Home</h1></div>
             <div className="head">
                 <div className="img img-back">
                     <>
