@@ -19,7 +19,7 @@ function CardPictureAbout() {
 
 export default function About() {
     return (
-        <>
+        <div className="about">
             <div className="head"></div>
             <section className="text">
                 <h1>About me</h1>
@@ -29,6 +29,6 @@ export default function About() {
                 <p>Outside of technology, I have been practicing <strong>climbing</strong> for over 10 years and enjoy sports in general. I am also passionate about games, especially <strong>board games</strong>, <strong>strategy</strong>, and <strong>logic games</strong>, with a particular interest in <strong>chess</strong>.</p>
                 <CardPictureAbout />
             </section>
-        </>
+        </div>
     );
 }

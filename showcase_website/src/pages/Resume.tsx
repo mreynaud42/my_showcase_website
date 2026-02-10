@@ -6,7 +6,7 @@ import "../styles/components/button.css";
 
 export default function Resume() {
     return (
-        <>
+        <div className="resume">
             <div className="head"></div>
             <section className="resume">
                 <h2>Mathis Reynaud's resume</h2>
@@ -19,6 +19,6 @@ export default function Resume() {
                     </a>
                 </div>
             </section>
-        </>
+        </div>
     );
 }

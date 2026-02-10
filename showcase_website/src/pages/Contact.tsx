@@ -5,7 +5,7 @@ import "../styles/components/button.css";
 
 export default function Contact() {
     return (
-        <>
+        <div className="contact">
             <div className="head"></div>
             <section className="contact">
                 <h2>Contact me</h2>
@@ -29,6 +29,6 @@ export default function Contact() {
                     </a>
                 </div>
             </section>
-        </>
+        </div>
     );
 }

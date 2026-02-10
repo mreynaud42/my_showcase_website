@@ -7,11 +7,11 @@ import "../styles/pages/projects.css";
 export default function Projects() {
 
     return (
-        <>
+        <div className="projects">
             <div className="head"></div>
             {projects.map((project, index) => (
                 <ProjectDiv key={index} project={project}/>
             ))}
-        </>
+        </div>
     );
 }

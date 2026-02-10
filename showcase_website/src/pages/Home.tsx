@@ -41,7 +41,7 @@ export default function Home() {
     const featuredProjects = projects.filter(project => project.featured);
 
     return (
-        <>
+        <div className="home">
             <div className="head">
                 <div className="img img-back">
                     <>
@@ -93,6 +93,6 @@ export default function Home() {
                     <ButtonCTA href="/resume" cta="See my resume"/>
                 </div>
             </section>
-        </>
+        </div>
     );
 }

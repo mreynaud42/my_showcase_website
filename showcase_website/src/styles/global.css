@@ -22,6 +22,10 @@ main {
     width: 100%;
     padding-bottom: 200px;
     min-height: 100vh;
+}
+
+main > div {
+    width: 100%;
 
     display: flex;
     flex-direction: column;
@@ -29,8 +33,9 @@ main {
     gap: 100px;
 }
 
-main > div {
-    width: 100%;
+div.head:has(*) {
+    width: 100vw;
+    height: 100vh;
 }
 
 h1.namepage {

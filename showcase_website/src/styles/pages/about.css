@@ -1,13 +1,13 @@
 
-section {
+.about section {
     width: 75%;
 }
 
-.card-picture-about {
+.about .card-picture-about {
     margin-top: 3rem;
 }
 
-section.text a:hover {
+.about section.text a:hover {
     text-decoration: underline;
 }
 

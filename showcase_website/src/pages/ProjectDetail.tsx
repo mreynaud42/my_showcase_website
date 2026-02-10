@@ -11,10 +11,10 @@ export default function ProjectDetail() {
     if (!project) return <p>project not found</p>;
 
     return (
-        <>
+        <div className="project-detail">
             <div className="title"><h1 className="namepage">{project.title}</h1></div>
             <div className="head"></div>
             <ComingSoon />
-        </>
+        </div>
     );
 }
