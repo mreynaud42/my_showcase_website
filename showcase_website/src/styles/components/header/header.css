@@ -15,12 +15,43 @@ header {
     z-index: 10;
 }
 
-header > div.top-bar, header label {
+header > div.top-bar {
     height: 100%;
-
+    
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+header > div.top-bar.nav {
+    padding: 30px;
+    border-radius: 25px;
+
+    background-color: var(--light-primary-color);
+    backdrop-filter: blur(10px);
+}
+
+header nav.menu {
+    padding: 0 5px;
+
+    display: flex;
+    gap: 10px;
+}
+
+header nav.menu a {
+    padding: 10px 20px;
+    border-radius: 15px;
+
+    font-weight: bold;
+    color: black;
+}
+
+header nav.menu a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+header div.burger-menu {
+    display: none;
 }
 
 header #menu-toggle {

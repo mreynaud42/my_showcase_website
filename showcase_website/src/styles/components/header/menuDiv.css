@@ -37,7 +37,7 @@ div.logo svg{
     color: black;
 }
 
-.nav-menu {
+.nav-burger-menu {
     margin: calc(75px + 1rem) 1rem 1rem 1rem;
     padding: 10vh 1rem 1rem 1rem;
     border-radius: 10px;
@@ -49,13 +49,13 @@ div.logo svg{
     justify-content: space-between;
 }
 
-.nav-menu li {
+.nav-burger-menu li {
     width: 100%;
     height: 10vh;
     list-style: none;
 }
 
-.nav-menu ul a {
+.nav-burger-menu ul a {
     width: 100%;
     line-height: 10vh;
     font-size: 7.5vh;
@@ -64,7 +64,7 @@ div.logo svg{
     color: var(--primary-color);
 }
 
-.nav-menu ul a:hover {
+.nav-burger-menu ul a:hover {
     background-color: var(--primary-color);
     color: var(--dark-secondary-color);
 }
