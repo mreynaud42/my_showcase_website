@@ -9,9 +9,11 @@ export default function Projects() {
     return (
         <div className="projects">
             <div className="head"></div>
-            {projects.map((project, index) => (
-                <ProjectDiv key={index} project={project}/>
-            ))}
+            <section className="project">
+                {projects.map((project, index) => (
+                    <ProjectDiv key={index} project={project}/>
+                ))}
+            </section>
         </div>
     );
 }

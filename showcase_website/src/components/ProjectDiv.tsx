@@ -1,6 +1,5 @@
-import LogoGitHub from "./logo/Git";
-import ButtonTech from "./ButtonTech"
 import ButtonCTA from "./ButtonCTA"
+import ComputerChip from "./icon/ComputerChip"
 
 import type { Project } from "../data/projects"
 
@@ -11,60 +10,54 @@ type ProjectDivProps = {
     project: Project,
 }
 
-function ProjectDivFooter({ project }: ProjectDivProps) {
+function ProjectDivFront({ project }: ProjectDivProps) {
     return (
-        <div className="footer">
-            {(project.technologies.length !== 0) && (
-                <div className="technologies">
-                        {project.technologies.map((tech, index) => (
-                            <ButtonTech key={index} technologie={tech}/>
-                        ))}
-                </div>
-            )}
-            {(project.githubUrl || project.demoUrl) && (
-                <div className="links">
-                    {project.githubUrl && (
-                        <div className="icon">
-                            <a href={project.githubUrl} target="_blank"><LogoGitHub /></a>
-                            <span className="tooltip">GitHub</span>
-                        </div>
-                    )}
-                    {project.demoUrl && (
-                        <div className="icon">
-                            <a href={project.githubUrl} target="_blank">Demo</a>
-                            <span className="tooltip">Demo</span>
-                        </div>
-                    )}
-                </div>
-            )}
+        <div className="project-front">
+            <figure>
+                {(project.shortDescription.imgs) && (project.shortDescription.imgs.length >= 1) && (
+                    <img src={project.shortDescription.imgs[0]} alt="" />
+                )}
+                <figcaption>
+                    <span>
+                        <h1>{project.title}</h1>
+                    </span>
+                    <span>
+                        <ComputerChip/>
+                    </span>
+                </figcaption>
+            </figure>
         </div>
     );
 }
 
-export default function ProjectDiv({ project }: ProjectDivProps) {
+function ProjectDivBack({ project }: ProjectDivProps) {
     return (
-        <section id={`project${project.id}`} className="project">
-            <div className="project-text">
-                <div className="project-description">
-                    <h2>{project.title}</h2>
+        <div className="project-back">
+            <div className="title">
+                <h1>{project.title}</h1>
+            </div>
+            <div className="content">
+                <div className="description">
                     {project.shortDescription.description.map((p, index) => (
                         <p key={index}>{p}</p>
                     ))}
                 </div>
-            </div>
-            {project.shortDescription.imgs && (
-                <div className="project-img">
-                    {project.shortDescription.imgs.map((img, index) => (
-                        <img key={index} src={img} alt={`Image of the ${project.title} project - image ${index + 1}`} />
-                    ))}
-                </div>
-            )}
-            {project.featured && (
                 <div className="button">
                     <ButtonCTA href={`/projects/${project.id}`} cta="See my project"/>
                 </div>
-            )}
-            <ProjectDivFooter project={project}/>
-        </section>
+            </div>
+        </div>
+    );
+}
+
+
+export default function ProjectDiv({ project }: ProjectDivProps) {
+    return (
+        <article id={`project${project.id}`} className="project">
+            <div className="card">
+                <ProjectDivFront project={project}/>
+                <ProjectDivBack project={project}/>
+            </div>
+        </article>
     );
 }

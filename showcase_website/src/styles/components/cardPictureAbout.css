@@ -25,14 +25,14 @@ div.picture-cards div.card:hover {
     transition: transform 0.5s cubic-bezier(.08,.82,.17,1);
 }
 
-figure {
+div.picture-cards div.card figure {
     height: 100%;
     width: 100%;
 
     position: relative;
 }
 
-figure img {
+div.picture-cards div.card figure img {
     height: 100%;
     width: 100%;
 
@@ -40,7 +40,7 @@ figure img {
     object-fit: cover;
 }
 
-figcaption {
+div.picture-cards div.card figcaption {
     padding: 5px 10%;
     width: 100%;
 
@@ -54,17 +54,18 @@ figcaption {
     bottom: 0;
 }
 
-figcaption a, figcaption p {
+div.picture-cards div.card figcaption a, 
+div.picture-cards div.card figcaption p {
 
     font-size: 0.8rem;
     text-align: center;
 }
 
-figcaption a:hover {
+div.picture-cards div.card figcaption a:hover {
     text-decoration: underline;
 }
 
-figure:hover figcaption {
+div.picture-cards div.card figure:hover figcaption {
     display: flex;
     justify-content: center;
 }

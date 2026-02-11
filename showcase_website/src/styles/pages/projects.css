@@ -1,5 +1,12 @@
 
 .projects section.project {
     width: 75%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 10vh 2%;
 }
 
