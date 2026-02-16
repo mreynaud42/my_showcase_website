@@ -11,12 +11,17 @@ type ProjectDivProps = {
 }
 
 function ProjectDivFront({ project }: ProjectDivProps) {
+
+    let img: string;
+    if (project.shortDescription?.imgs !== undefined)
+        img = project.shortDescription.imgs[0];
+    else
+        img = "public/icon/code-computer.svg"
+
     return (
         <div className="project-front">
             <figure>
-                {(project.shortDescription.imgs) && (project.shortDescription.imgs.length >= 1) && (
-                    <img src={project.shortDescription.imgs[0]} alt="" />
-                )}
+                <img src={img} alt="" />
                 <figcaption>
                     <span>
                         <h1>{project.title}</h1>
