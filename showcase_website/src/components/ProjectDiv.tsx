@@ -16,7 +16,7 @@ function ProjectDivFront({ project }: ProjectDivProps) {
     if (project.shortDescription?.imgs !== undefined)
         img = project.shortDescription.imgs[0];
     else
-        img = "public/icon/code-computer.svg"
+        img = "icon/code-computer.svg"
 
     return (
         <div className="project-front">
