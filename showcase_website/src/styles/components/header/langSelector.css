@@ -12,3 +12,7 @@ select.lang {
     font-weight: 900;
     text-align: center;
 }
+
+select.lang:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
