@@ -23,7 +23,7 @@ export default function Header() {
 
     return (
         <header>
-            <div className="top-bar"><a href="/"><img src="/logo/mreynaud.svg" alt="logo mreynaud" /></a></div>
+            <div className="top-bar logo-home"><a href="/"><img src="/logo/mreynaud.svg" alt="logo mreynaud" /></a></div>
             <div className="top-bar nav">
                 <nav className="menu">
                     <a href="/">Home</a>
