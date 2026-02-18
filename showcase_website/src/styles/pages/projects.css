@@ -10,3 +10,48 @@
     gap: 10vh 2%;
 }
 
+.projects .head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.projects div.head > div.text {
+    min-height: 400px;
+
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 5px;
+}
+
+.projects div.head > div.text * {
+    margin: 2px;
+    padding: 0 10px;
+
+    background-color: var(--secondary-color);
+}
+
+.projects div.head > div.text h1 {
+    font-size: 4rem;
+    font-weight: 800;
+
+    color: var(--dark-primary-color);
+}
+
+.projects div.head > div.text p {
+    font-size: 2rem;
+    font-weight: 600;
+
+    color: white;
+}
+
+.projects .three {
+    width: 400px;
+    height: 400px;
+}
+
