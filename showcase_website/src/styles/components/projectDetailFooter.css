@@ -1,31 +1,31 @@
 
-section.project div.footer {
+.project-detail section.project div.footer {
     grid-area: footer;
 
     display: flex;
     justify-content: space-between;
 }
 
-section.project div.footer div.technologies {
+.project-detail section.project div.footer div.technologies {
     display: flex;
     flex-wrap: wrap;
 }
 
-section.project div.footer div.links {
+.project-detail section.project div.footer div.links {
     display: flex;
     justify-content: end;
     align-items: center;
     gap: 10px;
 }
 
-section.project div.footer div.links .icon {
+.project-detail section.project div.footer div.links .icon {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-section.project div.footer div.links .icon a {
+.project-detail section.project div.footer div.links .icon a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +41,7 @@ section.project div.footer div.links .icon a {
     transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-section.project div.footer div.links .tooltip {
+.project-detail section.project div.footer div.links .tooltip {
     padding: 0 5px;
 
     position: absolute;
@@ -57,7 +57,7 @@ section.project div.footer div.links .tooltip {
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-section.project div.footer div.links .tooltip::after {
+.project-detail section.project div.footer div.links .tooltip::after {
     position: absolute;
 
     height: .5rem;
@@ -79,7 +79,7 @@ section.project div.footer div.links .tooltip::after {
     transform: translateY(calc(50% + 1px)) translateX(-50%) rotate(45deg);
 }
 
-section.project div.footer div.links .icon a:hover + .tooltip {
+.project-detail section.project div.footer div.links .icon a:hover + .tooltip {
     top: -30px;
     opacity: 1;
     visibility: visible;

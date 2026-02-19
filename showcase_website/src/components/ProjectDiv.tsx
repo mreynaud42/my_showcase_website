@@ -4,7 +4,6 @@ import ComputerChip from "./icon/ComputerChip"
 import type { Project } from "../data/projects"
 
 import "../styles/components/projectDiv.css";
-import "../styles/components/projectDivFooter.css";
 
 type ProjectDivProps = {
     project: Project,

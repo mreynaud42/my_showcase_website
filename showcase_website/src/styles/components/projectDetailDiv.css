@@ -1,0 +1,57 @@
+
+.project-detail section.project {
+    display: grid;
+    grid-template-columns: 1fr 40%;
+    grid-template-rows: auto; 
+    grid-template-areas:
+        "text img"
+        "footer footer";
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 3rem; 
+}
+
+.project-detail section.project:not(:has(.project-img)) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "text"
+        "footer";
+}
+
+.project-detail section.project div.project-img {
+   grid-area: img;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   gap: 1rem;
+}
+
+.project-detail section.project div.project-img img {
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+
+    display: block;
+}
+
+.project-detail section.project div.project-text {
+    grid-area: text;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.project-detail section.project div.project-description {
+    position: sticky;
+    top: 5vh;
+}
+
+.project-detail section.project div.project-description h2 {
+    margin-bottom: 2.5rem;
+}
+
+.project-detail section.project div.project-description p {
+    margin-top: 1rem;
+}
+

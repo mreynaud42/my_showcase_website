@@ -1,0 +1,12 @@
+
+.project-detail section, .project-detail div.button {
+    width: 75%;
+}
+
+.project-detail div.button > a {
+    rotate: 180deg;
+}
+
+.project-detail div.button > a p {
+    rotate: 180deg;
+}

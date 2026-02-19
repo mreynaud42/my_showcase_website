@@ -33,6 +33,7 @@ export const projects: Project[] = [
                     "The aim of the project is to understand how a computer can give an impression of depth and space (3D) from a two-dimensional environment. The user can move around, rotate the camera, and interact visually with the scenery.",
                     "Cub3D allows you to work on spatial representation, graphic display, and motion management. It is a project that links the logic of the program to a concrete visual rendering, similar to a simple but complete video game.",
                 ],
+                imgs: [ "/img_project/cub3d/Screenshot_42_cub.png" ]
             }
         ],
         technologies: [ "C", "Makefile" ],
@@ -75,7 +76,8 @@ export const projects: Project[] = [
                 description: [
                     "Push-swap is a project focused on optimization and logic. The goal is to sort a list of numbers using a very limited set of possible actions. The challenge is not only to sort, but to do so with as few actions as possible.",
                     "This project teaches how to analyze a problem, think about effective strategies, and compare different solutions.",
-                ]
+                ],
+                imgs: [ "/img_project/push_swap/radix_sort.gif" ]
             }
         ],
         technologies: [ "C", "Makefile" ],
@@ -90,7 +92,7 @@ export const projects: Project[] = [
             description: [
                 "Fract-ol is a 42 project where you create an interactive fractal viewer, exploring graphic programming and visual rendering from simple mathematical rules.",
             ],
-            imgs: [ "/img_project/fract-ol/mandelbrot.png", "/img_project/fract-ol/julia_0.285_0.01.png", "/img_project/fract-ol/julia_-0.5_-0.6.png" ]
+            imgs: [ "/img_project/fract-ol/mandelbrot.png" ]
         },
         fullDescription: [
             {
@@ -99,6 +101,7 @@ export const projects: Project[] = [
                     "The project involves generating these images and allowing the user to interact with them: moving around, zooming in, and changing colors. This helps users understand how a computer builds an image from simple rules and how a program can respond to user actions.",
                     "Fract-ol is primarily an introductory project to graphic programming. It emphasizes logic, program structure, and the link between abstract rules and concrete visual results, without requiring advanced mathematical knowledge.",
                 ],
+                imgs: [ "/img_project/fract-ol/mandelbrot.png", "/img_project/fract-ol/julia_0.285_0.01.png", "/img_project/fract-ol/julia_-0.5_-0.6.png" ]
             }
         ],
         technologies: [ "C", "Makefile" ],
@@ -121,6 +124,7 @@ export const projects: Project[] = [
                     "Minishell is a project that involves recreating a simplified version of a terminal, i.e., the tool used to give commands to a computer in text form. The program must understand what the user writes, perform the correct actions, and display the results.",
                     "This project provides a better understanding of how a system interprets commands, manages multiple actions in sequence, and communicates with the computer.",
                 ],
+                imgs: [ "/img_project/minishell/screenshot_minishell.png" ]
             }
         ],
         technologies: [ "C", "Makefile", "Shell" ],
@@ -142,7 +146,8 @@ export const projects: Project[] = [
                 description: [
                     "The Philosophers project is inspired by a classic problem in computer science. It involves several “philosophers” who must share resources without coming into conflict. The goal is to correctly manage simultaneous actions without deadlocks or errors.",
                     "This project helps us understand how a program can manage multiple tasks at the same time, and why coordination is essential.",
-                ]
+                ],
+                imgs: [ "/img_project/philosophers/dining_philosophers_problem.png" ]
             }
         ],
         technologies: [ "C", "Makefile" ],

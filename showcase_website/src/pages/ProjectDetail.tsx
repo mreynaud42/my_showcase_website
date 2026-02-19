@@ -1,8 +1,11 @@
 import { useParams } from "react-router-dom";
 
-import ComingSoon from "../components/ComingSoon"
+import ProjectDetailDiv from "../components/ProjectDetailDiv"
+import ButtonCTA from "../components/ButtonCTA"
 
 import { projects } from "../data/projects"
+
+import "../styles/pages/projectDetail.css";
 
 export default function ProjectDetail() {
     const { id } = useParams();
@@ -12,9 +15,12 @@ export default function ProjectDetail() {
 
     return (
         <div className="project-detail">
-            <div className="title"><h1 className="namepage">{project.title}</h1></div>
             <div className="head"></div>
-            <ComingSoon />
+            <div className="title"><h1 className="namepage">{project.title}</h1></div>
+            <ProjectDetailDiv project={project} />
+            <div className="button">
+                <ButtonCTA href={`/projects}`} cta="Back to the list of projects"/>
+            </div>
         </div>
     );
 }
