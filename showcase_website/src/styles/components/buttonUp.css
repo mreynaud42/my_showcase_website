@@ -1,0 +1,54 @@
+
+.button-up {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    
+    background-color: var(--dark-secondary-color);
+    color: var(--primary-color);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    overflow: hidden;
+    
+    transition-duration: 0.3s;
+}
+
+.button-up svg {
+    height: 30px;
+    
+    rotate: -90deg;
+
+    transition-duration: 0.3s;
+}
+
+.button-up:hover {
+    width: 140px;
+    
+    border: 1px black solid;
+    background-color: var(--secondary-color);
+
+    transition-duration: 0.3s;
+}
+
+.button-up:hover svg {
+    transition-duration: 0.3s;
+    transform: translateX(50px);
+}
+
+.button-up p {
+    position: absolute;
+    bottom: -20px;
+
+    font-size: 0px;
+}
+
+.button-up:hover p {
+    bottom: unset;
+    
+    font-size: 1rem;
+
+    transition-duration: 0.3s;
+}

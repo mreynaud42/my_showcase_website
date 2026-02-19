@@ -19,7 +19,7 @@ export default function ProjectDetail() {
             <div className="title"><h1 className="namepage">{project.title}</h1></div>
             <ProjectDetailDiv project={project} />
             <div className="button">
-                <ButtonCTA href={`/projects}`} cta="Back to the list of projects"/>
+                <ButtonCTA href={`/projects`} cta="Back to the list of projects"/>
             </div>
         </div>
     );
