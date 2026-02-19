@@ -16,7 +16,7 @@ export default function Footer() {
             <nav>
                 {pages.map((page, i) => (
                     <CardLink
-                        key={i} href="/" title={t(`${page}.title`)}
+                        key={i} href={`${page}` === `home`? `/` : `/${page}`} title={t(`${page}.title`)}
                         cta={i18n.exists(`${page}.cta`)? t(`${page}.cta`) : t("common.ctaDefault")}
                     >
                         <p><Trans i18nKey={`${page}.description`} components={{ strong: <strong /> }} /></p>
