@@ -12,7 +12,6 @@ export default i18n.use(LanguageDetector).use(initReactI18next).init({
     },
 
     supportedLngs: ["fr", "en"],
-    lng: "en",
     fallbackLng: "en",
 
     detection: {
