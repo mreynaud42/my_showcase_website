@@ -1,8 +1,5 @@
 
 .home div.head:has(*) {
-    width: 100vw;
-    height: 100vh;
-
     position: relative;
 }
 

@@ -22,7 +22,7 @@ a.card-project-home div.text {
     display: flex;
     flex-direction: column;
 
-    overflow-y: scroll;
+    overflow-y: auto;
     direction: rtl;
 }
 
