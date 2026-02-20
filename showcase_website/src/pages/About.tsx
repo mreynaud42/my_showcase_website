@@ -7,7 +7,7 @@ function CardPictureAbout() {
         <div className="card-picture-about">
             <PictureCards cards={[
                 { img: "photos/about/climbing3.jpg", alt: "" },
-                { img: "photos/about/white_bg7.jpg", alt: "", caption: "© maumau_pompom - 2026", captionHref: "https://www.instagram.com/maumau_pompom?igsh=eWEybGc4eXIwZGp4" },
+                // { img: "photos/about/white_bg7.jpg", alt: "", caption: "© maumau_pompom - 2026", captionHref: "https://www.instagram.com/maumau_pompom?igsh=eWEybGc4eXIwZGp4" },
                 { img: "photos/about/black_bg8.jpg", alt: "", caption: "© maumau_pompom - 2026", captionHref: "https://www.instagram.com/maumau_pompom?igsh=eWEybGc4eXIwZGp4" },
                 { img: "photos/about/white_bg8.jpg", alt: "", caption: "© maumau_pompom - 2026", captionHref: "https://www.instagram.com/maumau_pompom?igsh=eWEybGc4eXIwZGp4" },
                 { img: "photos/about/climbing1.jpg", alt: "" },
