@@ -2,17 +2,37 @@ import PictureCards from "../components/PictureCards"
 
 import "../styles/pages/about.css";
 
+type PictureCardData = {
+    img: string;
+    alt: string;
+    caption?: string;
+    captionHref?: string;
+};
+
 function CardPictureAbout() {
+
+    let imgs: PictureCardData[] = [
+        { img: "photos/about/black_bg8.jpg", alt: "", caption: "© maumau_pompom - 2026", captionHref: "https://www.instagram.com/maumau_pompom?igsh=eWEybGc4eXIwZGp4" },
+        { img: "photos/about/white_bg8.jpg", alt: "", caption: "© maumau_pompom - 2026", captionHref: "https://www.instagram.com/maumau_pompom?igsh=eWEybGc4eXIwZGp4" },
+        { img: "photos/about/climbing1.jpg", alt: "" },
+    ]
+    if (window.innerWidth > 1450) {
+        imgs.unshift( { img: "photos/about/climbing3.jpg", alt: "" } );
+        if (window.innerWidth > 1700) {
+            imgs.push(
+                { img: "photos/about/black_bg4.jpg", alt: "", caption: "© maumau_pompom - 2026", captionHref: "https://www.instagram.com/maumau_pompom?igsh=eWEybGc4eXIwZGp4" }
+            );
+            if (window.innerWidth > 1950) {
+                imgs.splice(1, 0, 
+                    { img: "photos/about/white_bg7.jpg", alt: "", caption: "© maumau_pompom - 2026", captionHref: "https://www.instagram.com/maumau_pompom?igsh=eWEybGc4eXIwZGp4" }
+                );
+            }
+        }
+    }
+
     return (
         <div className="card-picture-about">
-            <PictureCards cards={[
-                { img: "photos/about/climbing3.jpg", alt: "" },
-                // { img: "photos/about/white_bg7.jpg", alt: "", caption: "© maumau_pompom - 2026", captionHref: "https://www.instagram.com/maumau_pompom?igsh=eWEybGc4eXIwZGp4" },
-                { img: "photos/about/black_bg8.jpg", alt: "", caption: "© maumau_pompom - 2026", captionHref: "https://www.instagram.com/maumau_pompom?igsh=eWEybGc4eXIwZGp4" },
-                { img: "photos/about/white_bg8.jpg", alt: "", caption: "© maumau_pompom - 2026", captionHref: "https://www.instagram.com/maumau_pompom?igsh=eWEybGc4eXIwZGp4" },
-                { img: "photos/about/climbing1.jpg", alt: "" },
-                { img: "photos/about/black_bg4.jpg", alt: "", caption: "© maumau_pompom - 2026", captionHref: "https://www.instagram.com/maumau_pompom?igsh=eWEybGc4eXIwZGp4" },
-            ]}/>
+            <PictureCards cards={imgs}/>
         </div>
     );
 }
