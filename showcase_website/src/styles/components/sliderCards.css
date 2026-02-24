@@ -12,9 +12,7 @@ div.slider {
 }
 
 div.slider div.cards-size {
-    margin: 0 calc(50px + 2%);
-
-    overflow: hidden;
+    margin: 0 60px;
 }
 
 div.slider-cards {
@@ -23,6 +21,7 @@ div.slider-cards {
     position: relative;
 
     display: flex;
+    gap: 70px;
 
     transition: transform 0.5s ease;
 }
@@ -36,6 +35,10 @@ div.slider div.card {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+div.slider div.card:hover {
+    transform: scale(1.02);
 }
 
 div.slider div.card p {

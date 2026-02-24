@@ -76,11 +76,13 @@ export default function Home() {
             </div>
             <section className="projects">
                 <h2>My Featured Projects</h2>
-                <SliderCards>
-                    {featuredProjects.map((featuredProject, index) => (
-                        <CardProjectHome key={index} project={featuredProject}></CardProjectHome>
-                    ))}
-                </SliderCards>
+                <div className="home-slider">
+                    <SliderCards>
+                        {featuredProjects.map((featuredProject, index) => (
+                            <CardProjectHome key={index} project={featuredProject}></CardProjectHome>
+                        ))}
+                    </SliderCards>
+                </div>
                 <div className="button">
                     <ButtonCTA href="/projects" cta="See more of my projects"/>
                 </div>

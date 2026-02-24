@@ -16,11 +16,6 @@ export default function CardProjectHome({ project }: CardProjectHomeProps) {
                     <p key={index}>{p}</p>
                 ))}
             </div>
-            <div className="img">
-                {project.shortDescription.imgs && (
-                    <img src={project.shortDescription.imgs[0]} alt={`Image of the ${project.title} project`} />
-                )}
-            </div>
         </a>
     );
 }

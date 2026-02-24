@@ -79,6 +79,14 @@
     width: 75%;
 }
 
+.home .home-slider {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
 .home div.slider {
+    width: 700px;
     margin-bottom: 1rem;
 }
