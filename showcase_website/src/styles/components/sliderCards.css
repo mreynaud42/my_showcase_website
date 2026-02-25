@@ -97,11 +97,41 @@ div.slider button {
     align-items: center;
     
     cursor: pointer;
+
+    overflow: hidden;
 }
 
-div.slider button:hover {
-    transform: scale(1.05);
-    background-color: rgb(200, 200, 200);
+div.slider button span {
+    width: var(--size-button);
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: translateX(0%);
+    transition: transform 0.5s ease;
+}
+
+div.slider button.left:hover span {
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+}
+
+div.slider button.right:hover span {
+    transform: translateX(100%);
+    transition: transform 0.5s ease;
+}
+
+div.slider button.left span.hover {
+    right: -50px;
+}
+
+div.slider button.right span.hover {
+    left: -50px;
 }
 
 div.slider button svg {

@@ -96,10 +96,12 @@ export default function SliderCards({ children }: SliderCardsProps) {
                 ))}
             </ol>
             <button className="left" onClick={handlePrev} disabled={isAnimating}>
-                <Arrow />
+                <span className="no-hover"><Arrow /></span>
+                <span className="hover"><Arrow /></span>
             </button>
             <button className="right" onClick={handleNext} disabled={isAnimating}>
-                <Arrow />
+                <span className="no-hover"><Arrow /></span>
+                <span className="hover"><Arrow /></span>
             </button>
         </div>
     );

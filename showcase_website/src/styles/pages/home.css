@@ -84,28 +84,23 @@
 }
 
 .home .home-slider {
+    margin: 0 -3%;
     padding: 10px 0;
 
     position: relative;
 
     display: flex;
     justify-content: center;
+    mask-image: linear-gradient(
+        to right,
+        transparent -10%,
+        black calc((100% - 700px) * 0.5),
+        black calc(100% - ((100% - 700px) * 0.5)),
+        transparent 110%
+    );
 }
 
 .home div.slider {
     width: 700px;
     margin-bottom: 1rem;
-}
-
-.home .fade-horizontal {
-    position: absolute;
-    width: 106%;
-    height: 100%;
-    background: linear-gradient(
-        to right,
-        var(--light-primary-color) -1%,
-        rgba(0, 0, 0, 0) 10%,
-        rgba(0, 0, 0, 0) 90%,
-        var(--light-primary-color) 101%
-    );
 }
