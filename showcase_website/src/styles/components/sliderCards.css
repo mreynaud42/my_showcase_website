@@ -13,6 +13,8 @@ div.slider {
 
 div.slider div.cards-size {
     margin: 0 60px;
+
+    z-index: 5;
 }
 
 div.slider-cards {
@@ -54,17 +56,22 @@ ol.dots-cards {
     display: flex;
     align-content: center;
     justify-content: center;
+    gap: 10px;
 }
 
 li.dot {
     display: inline-block;
+
     width: 15px;
     height: 15px;
-    margin: 0 8px;
+
     background: var(--secondary-color);
     border-radius: 50%;
     opacity: 0.25;
+
     cursor: pointer;
+
+    z-index: 1;
 }
 
 li.is-selected {
@@ -75,21 +82,31 @@ div.slider button {
     --size-button: 50px;
     width: var(--size-button);
     height: var(--size-button);
-
+    
     border: var(--secondary-color) 1px solid;
     border-radius: 50%;
-
-    background-color: rgba(255, 255, 255, 0.6);
-
+    
+    background-color: rgba(255, 255, 255, 1);
+    
     position: absolute;
-
+    
     top: calc(var(--height-card) * 0.5 - var(--size-button) * 0.5);
-
+    
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
     cursor: pointer;
+}
+
+div.slider button:hover {
+    transform: scale(1.05);
+    background-color: rgb(200, 200, 200);
+}
+
+div.slider button svg {
+    height: 30px;
+    color: var(--secondary-color);
 }
 
 div.slider button.left {
@@ -108,7 +125,3 @@ div.slider button.right {
     padding-left: 3px;
 }
 
-div.slider button svg {
-    height: 30px;
-    color: var(--secondary-color);
-}

@@ -82,7 +82,7 @@ export default function Home() {
                             <CardProjectHome key={index} project={featuredProject}></CardProjectHome>
                         ))}
                     </SliderCards>
-                    <div className="fade-horizontal"></div>
+                    {/* <div className="fade-horizontal"></div> */}
                 </div>
                 <div className="button">
                     <ButtonCTA href="/projects" cta="See more of my projects"/>
