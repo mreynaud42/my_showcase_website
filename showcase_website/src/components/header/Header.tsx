@@ -31,6 +31,9 @@ export default function Header() {
                     <a href="/projects">Projects</a>
                     <a href="/contact">Contact</a>
                 </nav>
+            </div>
+            <LangSelector/>
+            <div className={`top-bar menu-click ${isCheck ? "check-menu" : ""}`}>
                 <div className="burger-menu">
                     <input type="checkbox" id="menu-toggle" checked={isCheck} onChange={(e) => setIsCheck(e.target.checked)}/>
                     <label htmlFor="menu-toggle" className="menu-button">
@@ -39,7 +42,6 @@ export default function Header() {
                 </div>
             </div>
             <MenuDiv className={`${isCheck ? "check" : ""}`}/>
-            <LangSelector/>
         </header>
     );
 }
