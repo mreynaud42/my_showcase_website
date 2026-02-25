@@ -5,14 +5,91 @@ select.lang {
 
     border: 1px black solid;
     border-radius: 5px;
-
+    
     background-color: rgba(255, 255, 255, 0.4);
-
+    
     font-size: 1.2rem;
     font-weight: 900;
     text-align: center;
 }
 
 select.lang:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+.custom-select {
+    width: 100px;
+
+    border: 1px black solid;
+    border-radius: 5px;
+    
+    background-color: rgba(255, 255, 255, 0.4);
+
+    position: relative;
+}
+
+.selected {
+    padding: 5px;
+
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    cursor: pointer;
+}
+
+.selected:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.arrow {
+    height: 10px;
+    width: 20px;
+    
+    margin-left: auto;
+
+    display: flex;
+    justify-content: center;    
+}
+
+.arrow svg {
+    rotate: 90deg;
+}
+
+.custom-select img {
+    display: block;
+    width: 20px;
+}
+
+.options {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    right: 0;
+
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+    z-index: 10;
+}
+
+.option {
+    padding: 5px 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: #f3f3f3;
 }
