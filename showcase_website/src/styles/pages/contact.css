@@ -5,7 +5,7 @@
 
 .contact div.info-contact {
     margin: 1rem;
-
+    
     display: flex;
     justify-content: space-around;
 }  
@@ -37,4 +37,31 @@
     font-weight: 500;
     font-size: 1rem;
     color: black;
+}
+
+@media (max-width: 1200px) {
+    .contact section.contact .center {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact div.info-contact {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .contact section.contact a.button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .contact section.contact {
+        width: 100%;
+        border-radius: 0;
+    }
 }

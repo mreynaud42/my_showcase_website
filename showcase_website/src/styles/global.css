@@ -48,7 +48,7 @@ h1.namepage {
 
 main section {
     border-radius: 0 50px;
-    padding: 2%;
+    padding: max(2%, 10px);
     
     background-color: var(--light-primary-color);
 
