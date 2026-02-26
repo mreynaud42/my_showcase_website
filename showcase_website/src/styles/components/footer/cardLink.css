@@ -1,6 +1,6 @@
 
 a.card-link {
-    width: 25%;
+    width: 20%;
 }
 
 a.card-link:hover {
@@ -29,4 +29,18 @@ div.card-link-bottom {
 
 footer > nav > a:hover div.card-link-bottom {
     opacity: 100%
+}
+
+@media (max-width: 1200px) {
+    a.card-link {
+        width: 45%;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    a.card-link {
+        width: 100%;
+    }
+    
 }

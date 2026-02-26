@@ -32,3 +32,29 @@
     0%   { transform: translateX(0%); }
     100% { transform: translateX(-100%); }
 }
+
+@media (max-width: 1000px) {
+    .marquee > div {
+        animation: marquee 10s linear infinite;
+    }
+
+    .marquee > div > span:nth-child(-n+2) {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .marquee > div {
+        animation: marquee 5s linear infinite;
+    }
+
+    .marquee > div > span:nth-child(-n+4) {
+        display: none;
+    }
+}
+
+@media (max-width: 300px) {
+    .marquee {
+        display: none;
+    }
+}
