@@ -73,7 +73,7 @@
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     .projects section.project {
         width: 90%;
     }

@@ -82,6 +82,10 @@
     .about div.head > div.text {
         transform: translate(10vw, 40px);
     }
+
+    .about section {
+        width: 90%;
+    }
 }
 
 @media (max-width: 800px) {
@@ -101,13 +105,15 @@
         font-size: 1.5rem;
     }
 
+    .card-picture-about div.picture-cards div.card {
+        transform: translate(var(--tx), 0) rotate(0);
+    }
+}
+
+@media (max-width: 600px) {
     .about section {
         width: 100%;
         border-radius: 0;
-    }
-
-    .card-picture-about div.picture-cards div.card {
-        transform: translate(var(--tx), 0) rotate(0);
     }
 }
 
