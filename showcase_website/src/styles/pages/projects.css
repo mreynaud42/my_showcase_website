@@ -55,3 +55,65 @@
     height: 400px;
 }
 
+@media (max-width: 1400px) {
+    .projects section.project {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1260px) {
+    .projects .head {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projects div.head > div.text {
+        min-height: unset;
+    }
+}
+
+@media (max-width: 900px) {
+    .projects section.project {
+        width: 90%;
+    }
+
+    .projects div.head > div.text h1 {
+        font-size: 2rem;
+    }
+
+    .projects div.head > div.text p {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: white;
+    }
+}
+
+@media (max-width: 750px) {
+    .projects section.project {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .projects section.project {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .projects .three {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 350px) {
+    .projects article.project .project-front figcaption h1 {
+        font-size: 1.5rem;
+    }
+
+    .projects div.button a.button-cta {
+        width: 100%;
+    }
+}
