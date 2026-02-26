@@ -17,6 +17,13 @@ div.fullscreen-menu {
     z-index: 15;
 }
 
+div.fullscreen-menu .custom-select {
+    width: 100px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
 div.fullscreen-menu.check {
     transform: translateX(0);
 }

@@ -1,5 +1,6 @@
 import Mreynaud from "../logo/Mreynaud"
 import SocialMedia from "../footer/SocialMedia"
+import LangSelector from "./LangSelector";
 
 import "../../styles/components/header/menuDiv.css";
 
@@ -11,6 +12,7 @@ export default function MenuDiv({ className }: MenuDivType) {
     return (
         <div className={`fullscreen-menu ${className}`} >
             <div className="logo"><Mreynaud/></div>
+            <LangSelector/>
             <nav className="nav-burger-menu">
                 <ul>
                     <li>
