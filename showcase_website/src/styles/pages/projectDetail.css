@@ -10,3 +10,56 @@
 .project-detail div.button > a p {
     rotate: 180deg;
 }
+
+@media (max-width: 1200px) {
+    .project-detail div.tooltip {
+        max-width: 40vw;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .project-detail section.project {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "text"
+        "img" 
+        "footer";
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 3rem;
+    }
+
+    .project-detail section.project div.project-img {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .project-detail section {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    
+    .project-detail section {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .project-detail div.button {
+        width: 100%;
+    }
+
+    .project-detail div.tooltip {
+        max-width: 80vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .project-detail div.button a.button-cta {
+        width: 95%;
+    }
+}
