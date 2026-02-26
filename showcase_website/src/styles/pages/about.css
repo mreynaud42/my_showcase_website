@@ -72,3 +72,86 @@
     text-decoration: underline;
 }
 
+@media (max-width: 1400px) {
+    .about div.head > div.text {
+        transform: translate(10vw, 0);
+    }
+}
+
+@media (max-width: 1000px) {
+    .about div.head > div.text {
+        transform: translate(10vw, 40px);
+    }
+}
+
+@media (max-width: 800px) {
+    .about div.head > div.img {
+        transform: translate(0, -100px);
+    }
+
+    .about div.head > div.text {
+        transform: translate(0, 10px);
+    }
+
+    .about div.head > div.text h1 {
+        font-size: 2.5rem;
+    }
+
+    .about div.head > div.text p {
+        font-size: 1.5rem;
+    }
+
+    .about section {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .card-picture-about div.picture-cards div.card {
+        transform: translate(var(--tx), 0) rotate(0);
+    }
+}
+
+@media (max-width: 550px) {
+    .about div.head > div.img {
+        transform: translate(0, -75px);
+    }
+
+    .about div.head > div.text h1 {
+        font-size: 2rem;
+    }
+
+    .about div.head > div.text p {
+        font-size: 1rem;
+    }
+
+    .about div.head > div.img {
+        width: 80vw;
+        height: 70vh;
+    }
+}
+
+@media (max-width: 500px) {
+    .card-picture-about {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .about div.head {
+        padding: 5% 0;
+    }
+
+    .about div.head > div.text h1 {
+        font-size: 1.5rem;
+    }
+
+    .about div.head > div.text p {
+        font-size: 0.8rem;
+    }
+
+    .about div.head > div.img {
+        width: 100vw;
+        height: 70vh;
+    }
+}
