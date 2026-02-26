@@ -80,10 +80,6 @@ div.logo svg{
     color: var(--dark-secondary-color);
 }
 
-div.social-media-menu {
-    height: 5vh;
-}
-
 div.social-media-menu a {
     border-radius: 5px;
     padding: 1vh;
