@@ -106,12 +106,30 @@
 }
 
 @media (pointer: coarse) {
+    .home div.head div.img-front {
+        align-items: end;
+    }
+
+    .home div.head div.img-front img.my-head {
+        max-height: 80%;
+    }
+
     .home div.head div.hole {
         --radius: 0 !important;
     }
 
     .home div.head div.img {
         background-color: unset;
+    }
+
+    .home div.head .img-front .logo {
+        display: none;
+    }
+
+    .home div.head div.img-back img.logo {
+        align-self: self-start;
+        height: unset;
+        margin-top: 75px;
     }
 }
 
