@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 import Mreynaud from "../logo/Mreynaud"
 import SocialMedia from "../footer/SocialMedia"
 import LangSelector from "./LangSelector";
@@ -9,6 +11,8 @@ type MenuDivType = {
 };
 
 export default function MenuDiv({ className }: MenuDivType) {
+    const { t } = useTranslation()
+
     return (
         <div className={`fullscreen-menu ${className}`} >
             <div className="logo"><Mreynaud/></div>
@@ -16,16 +20,16 @@ export default function MenuDiv({ className }: MenuDivType) {
             <nav className="nav-burger-menu">
                 <ul>
                     <li>
-                        <a href="/">Home</a>
+                        <a href="/">{t("home.title")}</a>
                     </li>
                     <li>
-                        <a href="/about">About</a>
+                        <a href="/about">{t("about.title")}</a>
                     </li>
                     <li>
-                        <a href="/projects">Projects</a>
+                        <a href="/projects">{t("projects.title")}</a>
                     </li>
                     <li>
-                        <a href="/contact">Contact</a>
+                        <a href="/contact">{t("contact.title")}</a>
                     </li>
                 </ul>
                 <div className="social-media-menu">

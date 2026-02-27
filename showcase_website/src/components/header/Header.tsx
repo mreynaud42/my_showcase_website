@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 
 import MenuDiv from "./MenuDiv"
@@ -6,6 +7,8 @@ import LangSelector from "./LangSelector";
 import "../../styles/components/header/header.css";
 
 export default function Header() {
+    const { t } = useTranslation()
+
     const [isCheck, setIsCheck] = useState(false);
 
     useEffect(() => {
@@ -26,10 +29,10 @@ export default function Header() {
             <div className="top-bar logo-home"><a href="/"><img src="/logo/mreynaud.svg" alt="logo mreynaud" /></a></div>
             <div className="top-bar nav">
                 <nav className="menu">
-                    <a href="/">Home</a>
-                    <a href="/about">About</a>
-                    <a href="/projects">Projects</a>
-                    <a href="/contact">Contact</a>
+                    <a href="/">{t("home.title")}</a>
+                    <a href="/about">{t("about.title")}</a>
+                    <a href="/projects">{t("projects.title")}</a>
+                    <a href="/contact">{t("contact.title")}</a>
                 </nav>
             </div>
             <LangSelector/>
