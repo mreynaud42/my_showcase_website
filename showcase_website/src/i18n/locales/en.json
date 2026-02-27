@@ -68,5 +68,6 @@
     },
     "resume": {
         "title": "Resume"
-    }
+    },
+    "notFound": "pages not found"
 }

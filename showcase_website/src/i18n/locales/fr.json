@@ -67,5 +67,6 @@
     },
     "resume": {
         "title": "CV"
-    }
+    },
+    "notFound": "pages introuvables"
 }
