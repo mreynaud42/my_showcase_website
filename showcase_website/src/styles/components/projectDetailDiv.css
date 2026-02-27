@@ -28,10 +28,16 @@
 
 .project-detail section.project div.project-img img {
     height: auto;
+    max-height: 60vh;
     width: 100%;
+    min-width: 150px;
     max-width: 100%;
 
+    flex: 1;
+    
     display: block;
+
+    object-fit: contain;
 }
 
 .project-detail section.project div.project-text {

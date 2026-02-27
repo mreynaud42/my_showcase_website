@@ -32,9 +32,11 @@
     }
 
     .project-detail section.project div.project-img {
+        width: 100%;
+
         display: flex;
         flex-direction: row;
-        gap: 1rem;
+        flex-wrap: wrap;
     }
 
     .project-detail section {
