@@ -53,6 +53,9 @@
         "description": "Une sélection de projets personnels et professionnels mettant en avant mes compétences techniques, mes méthodes de travail et mon approche du développement informatique.",
         "cta": "Voir mes projets"
     },
+    "projectDetail": {
+        "cta": "Retour à la liste des projets"
+    },
     "contact": {
         "title": "Contact",
         "description": "Vous avez une question ou une <strong>opportunité professionnelle</strong> ? N'hésitez pas à me contacter pour en discuter ou en savoir plus sur mon profil.",
