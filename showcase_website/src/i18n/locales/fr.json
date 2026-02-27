@@ -12,7 +12,20 @@
     "about": {
         "title": "À propos",
         "description": "En tant que développeur passionné par l'informatique et les nouvelles technologies, je présente ici mon parcours professionnel.",
-        "cta": "À propos de moi"
+        "cta": "À propos de moi",
+        "sHead": {
+            "title": "À propos de moi",
+            "description": "Développeur en formation à 42 Lyon.",
+            "cta": "Découvrez mon parcours et mes projets."
+        },
+        "sAbout": {
+            "title": "À propos de moi",
+            "paragraphs": [
+                "Bonjour, je m'appelle <strong>Mathis Reynaud</strong>. Je suis étudiant à <strong>42 Lyon</strong> et je prépare actuellement une certification <a>RNCP de niveau 6 (39783)</a>. Dans le cadre de ce parcours, je recherche activement un <strong>stage</strong>, suivi d'un poste en alternance, afin de développer mes compétences et d'approfondir ma connaissance du secteur technologique.",
+                "Je suis passionné par la programmation depuis le collège, où j'ai créé mes premiers jeux à l'aide de <strong>Scratch</strong>, aussi bien à l'école qu'à la maison. Cet intérêt s'est renforcé au lycée pendant mon <strong>bac STI2D</strong>, avec une spécialisation en <strong>systèmes d'information et technologies numériques</strong> (<strong>SIN</strong>), qui m'a permis d'acquérir des bases solides en informatique. Parallèlement de mes études, j'ai également appris le <strong>HTML</strong> et le <strong>CSS</strong> grâce à un cours en ligne.",
+                "J'ai ensuite poursuivi mes études à l'<strong>IUT</strong> en Informatique de Valence, où j'ai exploré différents langages de programmation et renforcé mes bases techniques. Après avoir validé ma première année, j'ai décidé de rejoindre <strong>42 Lyon</strong>, attiré par son approche pédagogique unique. J'ai principalement travaillé avec le <strong>C</strong>, <strong>C++</strong> et le <strong>développement web</strong>, tout en développant des compétences essentielles telles que l'<strong>autonomie</strong>, la <strong>rigueur</strong> et la capacité à <strong>apprendre à apprendre</strong>.",
+                "En dehors de la technologie, je pratique l'<strong>escalade</strong> depuis plus de 10 ans et j'aime le sport en général. Je suis également passionné par les jeux, en particulier les <strong>jeux de société</strong>, les jeux de <strong>stratégie</strong> et les jeux de <strong>logique</strong>, avec un intérêt particulier pour les <strong>échecs</strong>."]
+        }
     },
     "projects": {
         "title": "Projets",
