@@ -6,8 +6,29 @@
     "footer": {},
     "home": {
         "title": "Home",
-        "description": "A space dedicated to showcasing my skills, experience, and IT projects."
-
+        "description": "A space dedicated to showcasing my skills, experience, and IT projects.",
+        "sAbout": {
+            "title": "Mathis Reynaud",
+            "description": "Currently studying computer science, I specialize in application development. This site presents my profile and my work.",
+            "cta": "Want to learn more about me?",
+            "ctaButton": "About me"
+        },
+        "sContact": {
+            "title": "Let's get in touch",
+            "description": "I am open to professional exchanges, <strong>internship opportunities</strong>, and discussions about IT projects.",
+            "cta": "Want to contact me?",
+            "ctaButton": "Contact me"
+        },
+        "sProjects": {
+            "title": "My Featured Projects",
+            "ctaButton": "See more of my projects"
+        },
+        "sResume": {
+            "title": "Resume",
+            "description": "I am currently seeking a <strong>4 to 6 month internship in software development starting in March 2026</strong>, in order to put my technical skills into practice within a dynamic team. Motivated, rigorous, and curious, I am looking for professional experience that will allow me to make a concrete contribution to software projects while developing my skills in application design, development, and maintenance.",
+            "cta": "Want to see my resume?",
+            "ctaButton": "See my resume"
+        }
     },
     "about": {
         "title": "About",

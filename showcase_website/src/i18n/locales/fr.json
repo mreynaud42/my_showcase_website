@@ -6,8 +6,29 @@
     "footer": {},
     "home": {
         "title": "Accueil",
-        "description": "Un espace dédié à la présentation de mes compétences, de mon expérience et de mes projets informatiques."
-
+        "description": "Un espace dédié à la présentation de mes compétences, de mon expérience et de mes projets informatiques.",
+        "sAbout": {
+            "title": "Mathis Reynaud",
+            "description": "Actuellement étudiant en informatique, je me spécialise dans le développement d'applications. Ce site présente mon profil et mon travail.",
+            "cta": "Vous voulez en savoir plus sur moi ?",
+            "ctaButton": "À propos de moi"
+        },
+        "sContact": {
+            "title": "Me contacter",
+            "description": "Je suis ouvert aux échanges professionnels, aux <strong>opportunités de stage</strong> et aux discussions sur les projets informatiques.",
+            "cta": "Vous souhaitez me contacter ?",
+            "ctaButton": "Prenons contact"
+        },
+        "sProjects": {
+            "title": "Mes projets phares",
+            "ctaButton": "Voir plus de mes projets"
+        },
+        "sResume": {
+            "title": "CV",
+            "description": "Je recherche actuellement un <strong>stage de 4 à 6 mois en développement logiciel à partir de mars 2026</strong>, afin de mettre en pratique mes compétences techniques au sein d'une équipe dynamique. Motivé, rigoureux et curieux, je recherche une expérience professionnelle qui me permettra d'apporter une contribution concrète à des projets logiciels tout en développant mes compétences en conception, développement et maintenance d'applications.",
+            "cta": "Vous voulez voir mon CV ?",
+            "ctaButton": "Voir mon CV"
+        }
     },
     "about": {
         "title": "À propos",
