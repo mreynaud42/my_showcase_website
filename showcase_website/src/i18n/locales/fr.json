@@ -73,7 +73,12 @@
         }
     },
     "resume": {
-        "title": "CV"
+        "title": "CV",
+        "sResume": {
+            "title": "Mon CV",
+            "description": "Je recherche actuellement un <strong>stage de 4 à 6 mois en développement logiciel à partir de mars 2026</strong>, afin de mettre en pratique mes compétences techniques au sein d'une équipe dynamique. Motivé, rigoureux et curieux, je recherche une expérience professionnelle qui me permettra d'apporter une contribution concrète à des projets logiciels tout en développant mes compétences en conception, développement et maintenance d'applications.",
+            "cta": "Télécharger mon CV"
+        }
     },
     "notFound": "pages introuvables"
 }
