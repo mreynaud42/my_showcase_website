@@ -22,7 +22,14 @@
     "contact": {
         "title": "Contact",
         "description": "Have a question or a <strong>professional opportunity</strong>? Feel free to contact me to discuss or learn more about my profile.",
-        "cta": "Contact me"
+        "cta": "Contact me",
+        "sContact": {
+            "title": "Contact me",
+            "p": "I would be delighted to hear from you. Whether you have questions, <strong>an internship opportunity</strong>, or a potential collaboration, please feel free to contact me by email. I will respond as soon as possible.",
+            "detail": "Contact details:",
+            "social": "Social media:",
+            "cta": "Send me an email"
+        }
     },
     "resume": {
         "title": "Resume"
