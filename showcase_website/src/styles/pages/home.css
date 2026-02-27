@@ -105,6 +105,16 @@
     margin-bottom: 1rem;
 }
 
+@media (pointer: coarse) {
+    .home div.head div.hole {
+        --radius: 0 !important;
+    }
+
+    .home div.head div.img {
+        background-color: unset;
+    }
+}
+
 @media (max-width: 1400px) {
     .home div.head div.hole {
         --radius: 8rem;
