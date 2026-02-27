@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import ProjectDiv from "../components/ProjectDiv"
 import ThreeLaptop from "../components/ThreeCube";
 
@@ -6,6 +7,7 @@ import { projects } from "../data/projects"
 import "../styles/pages/projects.css";
 
 export default function Projects() {
+    const { t } = useTranslation()
 
     return (
         <div className="projects">
@@ -14,8 +16,8 @@ export default function Projects() {
                     <ThreeLaptop />
                 </div>
                 <div className="text">
-                    <h1>Explore my work</h1>
-                    <p>from low-level C programming to full-stack architectures.</p>
+                    <h1>{t("projects.sHead.title")}</h1>
+                    <p>{t("projects.sHead.description")}</p>
                 </div>
             </div>
             <section className="project">

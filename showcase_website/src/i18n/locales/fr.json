@@ -51,7 +51,11 @@
     "projects": {
         "title": "Projets",
         "description": "Une sélection de projets personnels et professionnels mettant en avant mes compétences techniques, mes méthodes de travail et mon approche du développement informatique.",
-        "cta": "Voir mes projets"
+        "cta": "Voir mes projets",
+        "sHead": {
+            "title": "Découvrez mon travail",
+            "description": "De la programmation bas niveau aux architectures full-stack."
+        }
     },
     "projectDetail": {
         "cta": "Retour à la liste des projets"

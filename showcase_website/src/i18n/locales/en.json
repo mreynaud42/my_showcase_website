@@ -52,7 +52,11 @@
     "projects": {
         "title": "Projects",
         "description": "A selection of personal and professional projects highlighting my technical skills, working methods, and approach to IT development.",
-        "cta": "See my projects"
+        "cta": "See my projects",
+        "sHead": {
+            "title": "Explore my work",
+            "description": "From low-level C programming to full-stack architectures."
+        }
     },
     "projectDetail": {
         "cta": "Back to the list of projects"
