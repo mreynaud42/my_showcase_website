@@ -55,10 +55,17 @@ function ProjectDetailBody({ project }: ProjectDetailProps) {
                     ))}
                 </div>
             </div>
-            {project.fullDescription[0].imgs && (
+            {(project.fullDescription[0].imgs || project.fullDescription[0].videos) && (
                 <div className="project-img">
-                    {project.fullDescription[0].imgs.map((img, index) => (
+                    {project.fullDescription[0].imgs && project.fullDescription[0].imgs.map((img, index) => (
                         <img key={index} src={img} alt={`Image of the ${project.title} project - image ${index + 1}`} />
+                    ))}
+                    {project.fullDescription[0].videos && project.fullDescription[0].videos.map((video, index) => (
+                        <video key={index} controls>
+                            <source src={video} type="video/webm" />
+                            <p>Your browser does not support video.</p>
+                            <p>{`video of the ${project.title} project - image ${index + 1}`}</p>
+                        </video>
                     ))}
                 </div>
             )}

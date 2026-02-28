@@ -6,6 +6,7 @@ type description = {
         fr: string[];
     }
     imgs?: string[];
+    videos?: string[];
 }
 
 export type Project = {
@@ -68,7 +69,8 @@ export const projects: Project[] = [
                 fr: [
                     "Transcendence est le projet final de l'école 42, dans lequel vous créez une application web entièrement fonctionnelle concernant le jeu Pong, des interactions utilisateur et la gestion de comptes.",
                 ]
-            }
+            },
+            imgs: [ "/img_project/transcendence/home.png" ]
         },
         fullDescription: [
             {
@@ -81,7 +83,8 @@ export const projects: Project[] = [
                         "Transcendance est le projet final du programme d'études de base de l'école 42. Il consiste à créer une application complète, accessible via un navigateur, intégrant le jeu Pong, les interactions avec les utilisateurs et la gestion des comptes.",
                         "Ce projet fait appel à toutes les compétences acquises précédemment : organisation, travail d'équipe et conception d'un produit cohérent et fonctionnel. Il s'apparente à un véritable projet professionnel, dont l'objectif est de livrer une application pleinement fonctionnelle."
                     ]
-                }
+                },
+                videos: [ "/img_project/transcendence/gameplay.webm" ]
             }
         ],
         technologies: [ "TypeScript", "JavaScript", "HTML", "CSS", "Docker", "Makefile" ],
