@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import type { ReactNode } from "react";
 
 import "../../styles/components/footer/cardLink.css";
@@ -11,7 +13,7 @@ type CardLinkType = {
 
 export default function CardLink({ href, title, children, cta }: CardLinkType) {
     return (
-        <a href={href} className="card-link">
+        <Link to={href} className="card-link">
             <div className="card-link-top">
                 <h2>{title}</h2>
                 {children}
@@ -19,6 +21,6 @@ export default function CardLink({ href, title, children, cta }: CardLinkType) {
             <div className="card-link-bottom">
                 <p>{cta}</p>
             </div>
-        </a>
+        </Link>
     );
 }

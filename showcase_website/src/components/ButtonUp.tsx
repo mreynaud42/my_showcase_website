@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 
 import Arrow from "./icon/arrow"
@@ -10,11 +9,11 @@ export default function ButtonUp() {
 
     useEffect(() => {
         const toggleVisibility = () => {
-        if (window.scrollY > 10) {
-            setVisible(true);
-        } else {
-            setVisible(false);
-        }
+            if (window.scrollY > 10) {
+                setVisible(true);
+            } else {
+                setVisible(false);
+            }
         };
 
         window.addEventListener("scroll", toggleVisibility);
@@ -22,12 +21,21 @@ export default function ButtonUp() {
         return () => window.removeEventListener("scroll", toggleVisibility);
     }, []);
 
-    return ((visible &&
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    };
+
+    if (!visible) return ;
+
+    return (
         <div className="div-button-up">
-            <a href="#top" className="button-up">
+            <button className="button-up" onClick={scrollToTop}>
                 <Arrow />
                 <p>Back to Top</p>
-            </a>
+            </button>
         </div>
-    ));
+    );
 }

@@ -5,6 +5,7 @@ import SocialMedia from "../footer/SocialMedia"
 import LangSelector from "./LangSelector";
 
 import "../../styles/components/header/menuDiv.css";
+import { Link } from "react-router-dom";
 
 type MenuDivType = {
     className: string;
@@ -20,16 +21,16 @@ export default function MenuDiv({ className }: MenuDivType) {
             <nav className="nav-burger-menu">
                 <ul>
                     <li>
-                        <a href="/">{t("home.title")}</a>
+                        <Link to="/">{t("home.title")}</Link>
                     </li>
                     <li>
-                        <a href="/about">{t("about.title")}</a>
+                        <Link to="/about">{t("about.title")}</Link>
                     </li>
                     <li>
-                        <a href="/projects">{t("projects.title")}</a>
+                        <Link to="/projects">{t("projects.title")}</Link>
                     </li>
                     <li>
-                        <a href="/contact">{t("contact.title")}</a>
+                        <Link to="/contact">{t("contact.title")}</Link>
                     </li>
                 </ul>
                 <div className="social-media-menu">

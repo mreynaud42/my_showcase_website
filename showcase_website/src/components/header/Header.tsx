@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 
@@ -26,13 +27,13 @@ export default function Header() {
 
     return (
         <header>
-            <div className="top-bar logo-home"><a href="/"><img src="/logo/mreynaud.svg" alt="logo mreynaud" /></a></div>
+            <div className="top-bar logo-home"><Link to="/"><img src="/logo/mreynaud.svg" alt="logo mreynaud" /></Link></div>
             <div className="top-bar nav">
                 <nav className="menu">
-                    <a href="/">{t("home.title")}</a>
-                    <a href="/about">{t("about.title")}</a>
-                    <a href="/projects">{t("projects.title")}</a>
-                    <a href="/contact">{t("contact.title")}</a>
+                    <Link to="/">{t("home.title")}</Link>
+                    <Link to="/about">{t("about.title")}</Link>
+                    <Link to="/projects">{t("projects.title")}</Link>
+                    <Link to="/contact">{t("contact.title")}</Link>
                 </nav>
             </div>
             <LangSelector/>
