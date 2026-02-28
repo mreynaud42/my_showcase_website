@@ -12,6 +12,7 @@
 }
 
 .project-detail section.project div.footer div.links {
+    margin: 0 10px;
     display: flex;
     justify-content: end;
     align-items: center;
