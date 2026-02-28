@@ -45,7 +45,7 @@ export default function Header() {
                     </label>
                 </div>
             </div>
-            <MenuDiv className={`${isCheck ? "check" : ""}`}/>
+            <MenuDiv className={`${isCheck ? "check" : ""}`} setIsCheck={setIsCheck}/>
         </header>
     );
 }

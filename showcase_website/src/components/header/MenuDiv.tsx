@@ -9,9 +9,10 @@ import { Link } from "react-router-dom";
 
 type MenuDivType = {
     className: string;
+    setIsCheck: React.Dispatch<React.SetStateAction<boolean>>
 };
 
-export default function MenuDiv({ className }: MenuDivType) {
+export default function MenuDiv({ className, setIsCheck }: MenuDivType) {
     const { t } = useTranslation()
 
     return (
@@ -21,16 +22,16 @@ export default function MenuDiv({ className }: MenuDivType) {
             <nav className="nav-burger-menu">
                 <ul>
                     <li>
-                        <Link to="/">{t("home.title")}</Link>
+                        <Link to="/" onClick={() => setIsCheck(false)}>{t("home.title")}</Link>
                     </li>
                     <li>
-                        <Link to="/about">{t("about.title")}</Link>
+                        <Link to="/about" onClick={() => setIsCheck(false)}>{t("about.title")}</Link>
                     </li>
                     <li>
-                        <Link to="/projects">{t("projects.title")}</Link>
+                        <Link to="/projects" onClick={() => setIsCheck(false)}>{t("projects.title")}</Link>
                     </li>
                     <li>
-                        <Link to="/contact">{t("contact.title")}</Link>
+                        <Link to="/contact" onClick={() => setIsCheck(false)}>{t("contact.title")}</Link>
                     </li>
                 </ul>
                 <div className="social-media-menu">
