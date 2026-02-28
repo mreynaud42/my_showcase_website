@@ -38,6 +38,8 @@
 }
 
 .home div.head div.img img.logo {
+    max-height: 100%;
+
     align-self: center;
 
     width: 80vw;
