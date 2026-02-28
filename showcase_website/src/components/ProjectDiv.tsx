@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 import ButtonCTA from "./ButtonCTA"
 import ComputerChip from "./icon/ComputerChip"
 
@@ -35,6 +37,8 @@ function ProjectDivFront({ project }: ProjectDivProps) {
 }
 
 function ProjectDivBack({ project }: ProjectDivProps) {
+    const { i18n } = useTranslation();
+
     return (
         <div className="project-back">
             <div className="title">
@@ -42,7 +46,7 @@ function ProjectDivBack({ project }: ProjectDivProps) {
             </div>
             <div className="content">
                 <div className="description">
-                    {project.shortDescription.description.map((p, index) => (
+                    {project.shortDescription.description[i18n.language as "fr" | "en"].map((p, index) => (
                         <p key={index}>{p}</p>
                     ))}
                 </div>

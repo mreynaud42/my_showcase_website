@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 import LogoGitHub from "./logo/Git";
 import ButtonTech from "./ButtonTech"
 
@@ -41,12 +43,14 @@ function ProjectDetailFooter({ project }: ProjectDetailProps) {
 }
 
 function ProjectDetailBody({ project }: ProjectDetailProps) {
+    const { i18n } = useTranslation();
+
     return (
         <>
             <div className="project-text">
                 <div className="project-description">
                     <h2>{project.title}</h2>
-                    {project.fullDescription[0].description.map((p, index) => (
+                    {project.fullDescription[0].description[i18n.language as "fr" | "en"].map((p, index) => (
                         <p key={index}>{p}</p>
                     ))}
                 </div>
