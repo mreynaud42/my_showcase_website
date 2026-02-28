@@ -29,7 +29,7 @@ export const projects: Project[] = [
                     "Cub3D is a 42 School project where you create a simple first-person game that simulates a 3D environment from a 2D map."
                 ],
                 fr: [
-                    "Cub3D est uun projet de l'école 42 dans lequel nous créons un jeu simple à la première personne qui simule un environnement 3D à partir d'une carte 2D."
+                    "Cub3D est un projet de l'école 42 dans lequel nous créons un jeu simple à la première personne qui simule un environnement 3D à partir d'une carte 2D."
                 ]
             },
             imgs: [ "/img_project/cub3d/Screenshot_42_cub.png" ]
