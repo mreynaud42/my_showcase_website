@@ -188,13 +188,14 @@
         width: 100%;
     }
 
-    a.card-project-home div.text {
-        justify-content: center;
-        padding: 0 50px;
-    }
-
     .home div.slider div.cards-size {
         margin: 0;
+    }
+    
+    .home a.card-project-home div.text {
+        padding: 0 50px;
+
+        justify-content: center;
     }
 
     .home div.slider button {
