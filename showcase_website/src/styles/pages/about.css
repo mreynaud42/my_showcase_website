@@ -74,6 +74,10 @@
 }
 
 @media (max-width: 1400px) {
+    main > div {
+        gap: 0;
+    }
+
     .about div.head > div.text {
         transform: translate(10vw, 0);
     }
