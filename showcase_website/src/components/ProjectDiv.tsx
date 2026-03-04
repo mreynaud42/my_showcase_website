@@ -37,7 +37,7 @@ function ProjectDivFront({ project }: ProjectDivProps) {
 }
 
 function ProjectDivBack({ project }: ProjectDivProps) {
-    const { i18n } = useTranslation();
+    const { t, i18n } = useTranslation()
 
     return (
         <div className="project-back">
@@ -51,7 +51,7 @@ function ProjectDivBack({ project }: ProjectDivProps) {
                     ))}
                 </div>
                 <div className="button">
-                    <ButtonCTA href={`/projects/${project.id}`} cta="See my project"/>
+                    <ButtonCTA href={`/projects/${project.id}`} cta={t("projects.cta")}/>
                 </div>
             </div>
         </div>
