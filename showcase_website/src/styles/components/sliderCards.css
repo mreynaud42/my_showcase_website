@@ -8,7 +8,7 @@ div.slider {
 
     user-select: none;
 
-    --height-card: min(400px, 55vh);
+    --height-card: min(350px, 55vh);
 }
 
 div.slider div.cards-size {
