@@ -2,6 +2,7 @@
 .about div.head {
     min-height: 600px;
     padding: 5%;
+    padding-top: max(5%, 75px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,8 +80,12 @@
 }
 
 @media (max-width: 1000px) {
+    .about div.head > div.img {
+        transform: translate(0, -100px);
+    }
+
     .about div.head > div.text {
-        transform: translate(10vw, 40px);
+        transform: translate(0, 50px);
     }
 
     .about section {
@@ -89,13 +94,6 @@
 }
 
 @media (max-width: 800px) {
-    .about div.head > div.img {
-        transform: translate(0, -100px);
-    }
-
-    .about div.head > div.text {
-        transform: translate(0, 10px);
-    }
 
     .about div.head > div.text h1 {
         font-size: 2.5rem;
