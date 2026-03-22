@@ -61,7 +61,7 @@ export default function About() {
                     <p key={i}>
                         <Trans components={{
                             strong: <strong />,
-                            a: <a href="https://www.francecompetences.fr/recherche/rncp/39783/" target="_blank" rel="noopener noreferrer" />
+                            a: <a href="https://www.francecompetences.fr/recherche/rncp/39774/" target="_blank" rel="noopener noreferrer" />
                         }}>
                             {p}
                         </Trans>
